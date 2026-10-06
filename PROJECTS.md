@@ -57,6 +57,22 @@ Mando móvil, widget y puente de comunicación. Es una buena segunda línea por 
 
 Biblioteca, cola, listas y recorte AAC/M4A. Las capturas muestran una interfaz propia y funciones locales concretas. Queda en segunda línea porque la documentación v0.2.1 vincula la reproducción a la actividad: la continuidad mediante servicio multimedia en segundo plano sigue pendiente. La conexión con YouTube Music es un relevo a su app oficial.
 
+### AXELTask
+
+**Agenda y tareas · Android · Fuentes privadas recuperadas**
+
+Código para agenda, tareas, interpretación de texto, detección de conflictos e integración con el calendario del dispositivo. Tiene pantallas de preparación, movilidad y privacidad, además de la agenda.
+
+La fuente recuperada declara package ai.axel.tasker, versión 1.0.0 y versionCode 1, coincidentes con la consulta de la instalación. Los informes existentes del 5 de septiembre registran **8 pruebas unitarias sin fallos ni errores** de interpretación y conflictos. No se han ejecutado de nuevo ni se ha revisado aquí su interfaz actual en el móvil. Es una candidata a la selección principal, pendiente de esa comparación.
+
+### AXELDROBE
+
+**Armario y conjuntos · Android · Fuentes privadas recuperadas**
+
+Organiza prendas, propone conjuntos según disponibilidad, contexto e historial, y contempla planificación y lavandería. La lógica de sugerencias recuperada funciona mediante reglas locales.
+
+La fuente declara package com.axel.axeldrobe.debug, versión 0.2.0-fixed y versionCode 2, coincidentes con la instalación consultada. Los informes existentes del 21 de septiembre registran **6 pruebas unitarias sin fallos ni errores** de interpretación de prendas y generación de conjuntos. No se ha validado aquí la experiencia actual del móvil. Es una candidata a la selección principal, pendiente de comparar diseño y flujos reales.
+
 ### DisAster
 
 **Organización de archivos · Candidata pendiente de evaluación completa**
@@ -69,4 +85,4 @@ CineVault48, AXEL Control y el selector de compilaciones conservan su valor como
 
 ---
 
-La selección es editorial y provisional, basada en la evidencia accesible. No es una clasificación completa: AXELTask, AXELDROBE y otras apps todavía requieren localizar y evaluar sus fuentes. [Consultar el catálogo completo y sus pendientes](CATALOG.md). Los repositorios privados conservan su acceso restringido.
+La selección es editorial y provisional, basada en la evidencia accesible. No es una clasificación completa: Las fuentes de AXELTask y AXELDROBE ya se han recuperado; falta comparar su experiencia actual y revisar las demás apps pendientes. [Consultar el catálogo completo y sus pendientes](CATALOG.md). Los repositorios privados conservan su acceso restringido.

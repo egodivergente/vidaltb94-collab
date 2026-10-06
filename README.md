@@ -20,7 +20,7 @@ La selección combina diseño de producto, utilidad, profundidad técnica y evid
 
 ## También en desarrollo
 
-**AXEL TV** explora la experiencia entre televisión y móvil. **AXEL Music** trabaja la reproducción y organización de audio local. [Ver alcance y estado](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#otros-proyectos).
+**AXELTask** organiza agenda y tareas. **AXELDROBE** conecta armario, conjuntos y planificación. **AXEL TV** explora la experiencia entre televisión y móvil; **AXEL Music**, la reproducción y organización de audio local. [Ver alcance y estado](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#otros-proyectos).
 
 ## Cómo trabajo
 

@@ -14,10 +14,10 @@ El índice interno documenta las ramas y la procedencia de las fuentes privadas.
 
 | Área | Proyectos |
 | :--- | :--- |
-| Creación y multimedia | ALEXIA · NEXUS · CineVault · CineVault48 · CreatorVault · Clasificador de fotos / variantes Android de DisAster · Corte · AudioTrim · PromptClip |
-| Familia AXEL | AXEL AI · AXEL Browse · AXEL Music · AXEL Native · AXEL OSINT · AXEL Portable · AXEL TV · AxShell · AXEL Control |
+| Creación y multimedia | ALEXIA · NEXUS · CineVault · CineVault48 · CreatorVault · Clasificador de fotos / variantes Android de DisAster · Corte · AudioTrim · Recortar Audio · PhotoLayers Studio · PromptClip |
+| Familia AXEL | AXEL AI · AXEL Browse · AXEL Music · AXEL Native · AXEL OSINT · AXEL Portable · AXEL TV · AXELTask · AXELDROBE · AXEL Stream · AXEL Media TV · AxShell · AXEL Control |
 | Herramientas especializadas | Amazon Medical Portal · Derivación SNS · DerivaMAD4 · FarmaTools Ronda |
-| Planificación | NutriShift |
+| Planificación y organización | NutriShift · Cliptree |
 | Web y variantes | DisAster web · DisAster (repositorio anterior) · Noelia y Vidal, variantes Claude y PWA |
 | Dispositivos | Dreame · S25 Manager |
 
@@ -25,14 +25,13 @@ Las variantes de un producto y sus repositorios históricos no se cuentan como a
 
 ## Apps pendientes de consolidar
 
-Estas apps forman parte del inventario conocido y deben incorporarse a la evaluación. Todavía no hay una fuente consolidada identificada en el registro de recuperación.
+Las fuentes de AXELTask, AXELDROBE y Cliptree se localizaron en las carpetas de trabajo de Antigravity y ya están publicadas en repositorios privados. Sus fichas están [aquí](PROJECTS.md#axeltask). La recuperación añadió también PhotoLayers Studio, Recortar Audio, AXEL Stream y AXEL Media TV. Las variantes de proyectos existentes se conservan en ramas separadas. No se han recompilado durante esta recuperación.
+
+Estas apps siguen pendientes de consolidación:
 
 | App | Pendiente |
 | :--- | :--- |
-| **AXELTask** | Localizar el proyecto fuente, verificar su edición y publicarlo en su repositorio privado. |
-| **AXELDROBE** | Localizar el proyecto fuente y compararlo con la edición actual antes de evaluarlo. |
 | **Despeja** | Localizar y consolidar las fuentes. |
-| **Cliptree** | Localizar y consolidar las fuentes. |
 | **AKI** | Reconciliar la app con sus fuentes; no confundirla con herramientas y respaldos de nombre similar. |
 
 ## Repositorios y componentes por reconciliar
@@ -41,7 +40,7 @@ Estas apps forman parte del inventario conocido y deben incorporarse a la evalua
 - **NEXUS-Studio:** repositorio separado sin fuentes en la revisión anterior; el escritorio de NEXUS sí figura en el proyecto NEXUS.
 - **Or:** archivo ZIP de CreatorVault, pendiente de organizar como fuente navegable.
 - **salon:** repositorio añadido después del inventario inicial, pendiente de revisión.
-- **AXEL Stream:** hay evidencia histórica de una app instalada; su fuente y estado actual necesitan comprobación.
+- **AXEL Stream y AXEL Media TV:** fuentes recuperadas; funcionamiento actual pendiente de comprobar.
 - **Selector de compilaciones:** infraestructura de desarrollo, fuera de la selección principal de aplicaciones.
 - **apps-index:** índice interno de fuentes, variantes y pendientes.
 - **Repositorio del perfil:** presentación pública del ecosistema.
