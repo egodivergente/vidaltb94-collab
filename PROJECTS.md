@@ -1,6 +1,6 @@
 # Proyectos seleccionados
 
-Tres productos encabezan este portafolio por la combinación de utilidad, diseño, profundidad y evidencia disponible. La revisión del **6 de octubre de 2026** compara documentación, fuentes accesibles, capturas reales e informes existentes; no es una nueva prueba completa de todas las aplicaciones.
+Cuatro productos encabezan este portafolio por la combinación de utilidad, diseño, profundidad y evidencia disponible. La revisión del **6 de octubre de 2026** compara documentación, fuentes accesibles, capturas reales e informes existentes; no es una nueva prueba completa de todas las aplicaciones.
 
 [Volver al perfil](https://github.com/vidaltb94-collab)
 
@@ -30,13 +30,26 @@ Conecta la planificación de comidas con turnos, recetas, raciones, despensa y c
 - **Evidencia revisada:** captura real de la versión 2.2 y fuentes e informes de la 2.3. Los XML registran **42 pruebas JVM sin errores ni fallos**; el informe Android registra **28 pruebas superadas en el S25**.
 - **Límite:** la revisión visual completa de la versión 2.3 seguía pendiente en la documentación consultada. El intercambio con ChatGPT es manual y revisable; no se presenta como una integración automática. Las estimaciones nutricionales no son una validación clínica.
 
+## Corte
+
+**03 · Edición de vídeo · Android nativo · Fuentes privadas**
+
+Un editor multipista con proyectos locales, vídeo y audio vinculados, edición ripple, deshacer, autoguardado, keyframes, corrección de color, LUT y rótulos. Comparte la composición entre la previsualización y la exportación.
+
+**Por qué entra en los destacados:** tiene una arquitectura de edición propia y un alcance multimedia considerable, con pruebas documentadas sobre las matemáticas del timeline y sobre los archivos exportados. Amplía la presentación más allá de las herramientas con IA.
+
+- **Implementación revisada:** módulos de modelo, timeline y almacenamiento; Kotlin, Compose y Media3. Edición no destructiva, mezcla de audio, control de huecos entre pistas y exportación mediante un servicio con validación del archivo resultante.
+- **Evidencia actual:** el 6 de octubre se comparó el proyecto recuperado con la app instalada: coinciden paquete, versión, certificado documentado y las 153 clases de producción declaradas. Es una reconciliación estática, sin afirmar identidad binaria.
+- **Pruebas históricas:** ARCHITECTURE.md documenta 83 pruebas JVM y 20 pruebas instrumentadas sin fallos en el S25, además de exportaciones y medidas de imagen/audio. Esos resultados documentados no se han repetido en esta recuperación.
+- **Límites:** varias interacciones de la interfaz de fase 2 siguen pendientes de revisión manual. Proxies, HDR, curvas de velocidad y el render de altas luces, sombras y nitidez no están completos. No se presenta como un editor terminado en todas sus funciones.
+
 ## ALEXIA
 
-**03 · Biblioteca creativa · Android · Fuentes privadas**
+**04 · Biblioteca creativa · Android · Fuentes privadas**
 
 Organiza material creativo por proyectos y conecta su índice local con los archivos y las herramientas de Android.
 
-**Por qué forma parte del trío principal:** aporta profundidad en almacenamiento e interoperabilidad, con evidencia concreta de conservación de originales e integridad de archivos.
+**Por qué forma parte de la selección:** aporta profundidad en almacenamiento e interoperabilidad, con evidencia concreta de conservación de originales e integridad de archivos.
 
 - **Diseño de sistema:** separar el índice de la biblioteca del almacenamiento de los archivos.
 - **Implementación:** Kotlin, Room, Storage Access Framework, DocumentsProvider e índice legible por agentes.
@@ -77,7 +90,7 @@ La fuente declara package com.axel.axeldrobe.debug, versión 0.2.0-fixed y versi
 
 **Organización de archivos · Candidata pendiente de evaluación completa**
 
-El catálogo registra una edición Android instalada más reciente que las fuentes completas recuperadas. Se conserva como candidata: falta reconciliar esa edición y revisar su interfaz y sus flujos actuales antes de situarla por encima del trío principal. La variante web es un producto separado.
+La edición Android instalada 3.7.3-permfix se ha recuperado completa desde su APK: recursos, interfaz web y código Smali. Se reconstruyó en el ASUS; las clases DEX coinciden y los assets mantienen sus bytes. Es una reconstrucción, con fuentes nativas originales pendientes. Su interfaz y sus flujos actuales todavía requieren evaluación funcional para decidir su lugar entre los destacados. La variante web se conserva por separado.
 
 ### Herramientas de apoyo
 

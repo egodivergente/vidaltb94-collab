@@ -1,12 +1,12 @@
 # Catálogo del ecosistema
 
-La portada muestra tres proyectos seleccionados. Este catálogo conserva el resto del ecosistema, incluidas las aplicaciones cuyas fuentes todavía están pendientes de localizar o consolidar.
+La portada muestra cuatro proyectos seleccionados. Este catálogo conserva el resto del ecosistema, incluidas las aplicaciones cuyas fuentes todavía están pendientes de localizar o consolidar.
 
 **La selección del portafolio es provisional mientras se completa la evaluación de las apps pendientes.** Ausencia de una app en la portada no significa ausencia de código ni menor calidad.
 
 ## Proyectos seleccionados
 
-[NEXUS, NutriShift y ALEXIA: alcance, evidencia y límites](PROJECTS.md).
+[NEXUS, NutriShift, Corte y ALEXIA: alcance, evidencia y límites](PROJECTS.md).
 
 ## Fuentes registradas en repositorios
 
@@ -14,31 +14,33 @@ El índice interno documenta las ramas y la procedencia de las fuentes privadas.
 
 | Área | Proyectos |
 | :--- | :--- |
-| Creación y multimedia | ALEXIA · NEXUS · CineVault · CineVault48 · CreatorVault · Clasificador de fotos / variantes Android de DisAster · Corte · AudioTrim · Recortar Audio · PhotoLayers Studio · PromptClip · Keyframe Sorter |
+| Creación y multimedia | ALEXIA · NEXUS · CineVault · CineVault48 · CreatorVault · Clasificador de fotos / variantes Android de DisAster · Corte · AudioTrim · Recortar Audio · PhotoLayers Studio · PromptClip · Keyframe Sorter · Despeja |
 | Familia AXEL | AXEL AI · AXEL Browse · AXEL Music · AXEL Native · AXEL OSINT · AXEL Portable · AXEL TV · AXELTask · AXELDROBE · AXEL Stream · AXEL Media TV · AxShell · AXEL Control · AXEL Link · Mando AXEL · AxelMusic TV |
-| Herramientas especializadas | Amazon Medical Portal · Derivación SNS · DerivaMAD4 · FarmaTools Ronda |
+| Herramientas especializadas | Amazon Medical Portal · Derivación SNS · DerivaMAD4 · FarmaTools Ronda · AXELWORK |
 | Planificación y organización | NutriShift · Cliptree |
 | Web y variantes | DisAster web · DisAster (repositorio anterior) · Noelia y Vidal, variantes Claude y PWA |
-| Dispositivos | Dreame · S25 Manager |
+| Dispositivos y asistentes locales | Dreame · S25 Manager · Dr. Axel · Aki Chat · AKI · AXEL Console · Lanzador Antigravity personal |
 
-Las variantes de un producto y sus repositorios históricos no se cuentan como apps distintas. DisAster Android conserva recuperaciones incompletas que deben reconciliarse con la edición más reciente.
+Las variantes de un producto y sus repositorios históricos no se cuentan como apps distintas. DisAster Android conserva las ramas históricas y una reconstrucción completa del APK instalado 3.7.3. Esa reconstrucción no sustituye las fuentes nativas originales que siguen pendientes de localizar.
 
 ## Apps pendientes de consolidar
 
 Las fuentes de AXELTask, AXELDROBE y Cliptree se localizaron en las carpetas de trabajo de Antigravity y ya están publicadas en repositorios privados. Sus fichas están [aquí](PROJECTS.md#axeltask). La recuperación añadió también PhotoLayers Studio, Recortar Audio, AXEL Stream y AXEL Media TV. Las variantes de proyectos existentes se conservan en ramas separadas. No se han recompilado durante esta recuperación.
 
-Estas apps siguen pendientes de consolidación:
+Estos proyectos requieren completar su recuperación:
 
 | App | Pendiente |
 | :--- | :--- |
-| **Despeja** | Localizar y consolidar las fuentes. |
-| **AKI** | Reconciliar la app con sus fuentes; no confundirla con herramientas y respaldos de nombre similar. |
+| **Despeja** | Localizar el proyecto original; se conserva una reconstrucción de su APK. |
+| **AXEL Console** | Localizar el proyecto original; su reconstrucción desde APK compila. |
+| **DisAster Android** | Localizar las fuentes nativas originales; la edición instalada 3.7.3 se conserva reconstruida y compilable. |
+| **AXEL Android (`ai.axel.app`)** | Código Java recuperado dentro de un árbol mezclado con ALEXIA; separar y reconciliar su configuración de compilación. |
 
 ## Inventario Android ampliado
 
 La revisión de APK del 6 de octubre identifica **35 entradas de apps Android propias**, incluidas apps complementarias y prototipos. Las variantes de pruebas se agrupan con su app principal. Este recuento describe el archivo Android; los proyectos web y herramientas del catálogo tienen otro alcance.
 
-Además de las apps anteriores, se localizaron **AXEL Console, AXELWORK, Dr. Axel, Aki Chat y un lanzador Antigravity personal**. Sus APK confirman su existencia, pero su funcionamiento actual y su inclusión en la selección principal están pendientes de evaluar. Hay fuentes candidatas en el S25 para AXELWORK, Dr. Axel, Aki Chat, AKI y el lanzador; todavía deben consolidarse en Git. AXEL Android con identificador `ai.axel.app` conserva APK y requiere reconciliar su fuente exacta. La fuente de AXEL Console sigue pendiente.
+Además de las apps anteriores, se localizaron **AXEL Console, AXELWORK, Dr. Axel, Aki Chat y un lanzador Antigravity personal**. Sus APK confirman su existencia, pero su funcionamiento actual y su inclusión en la selección principal están pendientes de evaluar. Las fuentes de AXELWORK, Dr. Axel, Aki Chat, AKI y el lanzador ya están publicadas en repositorios privados. Las 8 clases de AKI aparecen en su APK instalado; su carpeta original no incluye un proyecto Gradle completo. AXEL Android `ai.axel.app` conserva sus fuentes Java dentro de un árbol con configuración ALEXIA, archivado sin mezclarlo con la fuente principal. AXEL Console conserva una reconstrucción de su APK que compila; su proyecto original sigue pendiente. Ninguna de estas recuperaciones acredita por sí sola una prueba funcional actual.
 
 **Keyframe Sorter y DisAster son apps distintas.** Keyframe Sorter figura en la recuperación base del repositorio `clasificador-fotos`; DisAster conserva otras ramas de recuperación. AXEL Link, Mando AXEL y AxelMusic TV tienen APK propios como apps complementarias.
 

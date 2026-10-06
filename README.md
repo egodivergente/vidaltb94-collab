@@ -6,13 +6,14 @@ Diseño y desarrollo aplicaciones para convertir necesidades concretas en produc
 
 **Android nativo · Productos con IA · Diseño de interfaces · Automatización**
 
-## Tres proyectos para empezar
+## Proyectos destacados
 
 | Proyecto | Qué aporta | Explorar |
 | :--- | :--- | :--- |
 | **01 · NEXUS** | Un estudio de creación con IA para Android y escritorio: modelos, parámetros, referencias y biblioteca multimedia en un mismo flujo. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nexus) |
 | **02 · NutriShift** | Planificación de comidas adaptada a turnos, conectada con recetas, raciones, despensa y lista de compra. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nutrishift) |
-| **03 · ALEXIA** | Una biblioteca creativa por proyectos que integra imágenes, vídeo y audio con el almacenamiento y los selectores de Android. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#alexia) |
+| **03 · Corte** | Edición de vídeo multipista en Android: timeline, audio, color, LUT, textos y exportación. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#corte) |
+| **04 · ALEXIA** | Una biblioteca creativa por proyectos que integra imágenes, vídeo y audio con el almacenamiento y los selectores de Android. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#alexia) |
 
 La selección combina diseño de producto, utilidad, profundidad técnica y evidencia disponible. Es provisional mientras se completa la revisión del catálogo. Las fichas explican qué está comprobado y qué sigue en desarrollo.
 
