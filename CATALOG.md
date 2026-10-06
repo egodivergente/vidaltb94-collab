@@ -1,6 +1,6 @@
 # Catálogo de productos
 
-El catálogo organiza productos, variantes y herramientas de apoyo. Los repositorios de código privado se presentan aquí mediante descripciones públicas; sus archivos y datos internos conservan el acceso restringido.
+Aquí organizo mis productos, variantes y herramientas de apoyo. Describo los proyectos cuyas fuentes mantengo privadas y enlazo los que tienen código público.
 
 ## Productos destacados
 
@@ -15,10 +15,10 @@ El catálogo organiza productos, variantes y herramientas de apoyo. Los reposito
 | **DisAster** | Organización de archivos. | App Android y variantes web separadas. La edición Android instalada 3.7.3 conserva una reconstrucción compilable. |
 | **Keyframe Sorter** | Herramienta Android de organización de imágenes y keyframes. | App distinta de DisAster, aunque sus archivos compartan repositorio. |
 | **AudioTrim** | Apertura de audio o vídeo y recorte de audio. | Flujo WAV probado de principio a fin; otros formatos pendientes. App distinta de Recortar Audio. |
-| **Recortar Audio** | Recorte con reproducción, forma de onda y exportación. | Fuentes recuperadas; validación actual pendiente. |
+| **Recortar Audio** | Recorte con reproducción, forma de onda y exportación. | Recorte WAV convencional comprobado; fallos reproducidos con chunks adicionales y etiquetado de exportación. |
 | **PhotoLayers Studio** | Edición de imágenes por capas y máscaras; ampliación por interpolación y enfoque. | Fuentes recuperadas; experiencia actual pendiente. |
 | **PromptClip** | Detección y copia de prompts visibles mediante accesibilidad. | Fuentes recuperadas; los permisos y las versiones tienen documentación propia. |
-| **Despeja** | Captura de ideas y pendientes con clasificación y planificación. | Reconstrucción desde APK compilada; proyecto Kotlin original pendiente. Su clasificación y puente se revisaron en Smali; flujos actuales pendientes. |
+| **Despeja** | Captura de ideas y pendientes con clasificación y planificación. | Captura, clasificación y completar comprobados. Conservo una reconstrucción desde APK; proyecto Kotlin original y prueba del puente pendientes. |
 
 ## Familia AXEL
 
@@ -35,7 +35,7 @@ El catálogo organiza productos, variantes y herramientas de apoyo. Los reposito
 | **AxShell** | Editor de secuencias de acciones y comandos. |
 | **AXEL Work** | Organización de trabajo clínico; fuente recuperada, sin validación clínica ni funcional actual. |
 
-Las fuentes de AXEL Task y AXEL Drobe están recuperadas. AXEL Android conserva Java dentro de un árbol con configuración mezclada de ALEXIA; queda separar y reconciliar el proyecto. [Evidencia y pendientes](VALIDATION.md#otros-proyectos).
+Conservo las fuentes de AXEL Task y AXEL Drobe. La recuperación de las ediciones de AXEL mantiene su procedencia y sus diferencias documentadas. [Pruebas y pendientes](VALIDATION.md#otros-resultados).
 
 ## Productividad y herramientas especializadas
 
@@ -50,7 +50,7 @@ Las fuentes de AXEL Task y AXEL Drobe están recuperadas. AXEL Android conserva 
 
 ## Infraestructura y componentes locales
 
-AXEL Control, Dr. Axel, AXEL Console, AKI, Aki Chat, el lanzador Antigravity personal, Dreame MCP, Salón y el selector de compilaciones son herramientas de apoyo. No se confunden con los cinco productos destacados. Dreame conserva la atribución de su protocolo; el lanzador es independiente de Google.
+También desarrollo o integro herramientas de apoyo: AXEL Control, Dr. Axel, AXEL Console, AKI, Aki Chat, el lanzador Antigravity personal, Dreame MCP, Salón y el selector de compilaciones. Dreame conserva la atribución de su protocolo; el lanzador es un proyecto personal independiente de Google.
 
 AXEL Portable conserva un archivo de **Codex UI**, una interfaz web local del ejecutor Codex. No es un APK Android. AXEL Link, Mando AXEL y AXEL Music TV son aplicaciones complementarias de sus familias.
 
@@ -61,10 +61,10 @@ AXEL Portable conserva un archivo de **Codex UI**, una interfaz web local del ej
 - **NEXUS-Studio:** reserva vacía; el escritorio real se conserva dentro del proyecto NEXUS.
 - **DisAster Web anterior:** revisión web conservada por separado del archivo web recuperado y de Android.
 
-Los tres primeros repositorios se archivan para separar reservas y copias históricas del trabajo activo, conservando su contenido.
+He archivado los tres primeros repositorios para conservar las reservas y copias históricas separadas del trabajo activo.
 
 ## Alcance del inventario
 
-La revisión del 6 de octubre identifica **35 entradas de apps Android propias**, agrupando las variantes de prueba y contando también complementos y prototipos. Los proyectos web y la infraestructura tienen otro alcance; 49 repositorios no equivalen a 49 aplicaciones terminadas.
+En el inventario del 6 de octubre identifico **35 entradas Android**, agrupando variantes de prueba e incluyendo complementos y prototipos. Mantengo aparte los proyectos web, los servicios y la infraestructura.
 
 El inventario detallado de hashes, ramas y procedencia permanece privado. Este catálogo público ofrece los nombres, las relaciones y el estado de las fuentes sin dirigir al visitante a documentación restringida.

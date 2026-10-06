@@ -17,7 +17,7 @@ Desarrollo productos Android y herramientas de escritorio a partir de necesidade
 | **NutriShift** | Turnos, menús, despensa, raciones y compra. | [Utilidad cotidiana](PROJECTS.md#nutrishift) |
 | **AudioTrim** | Recorte de audio local con un flujo WAV verificado muestra a muestra. | [Precisión en una herramienta local](PROJECTS.md#audiotrim) |
 
-La selección reconoce aportaciones distintas. Las fichas identifican implementación, pruebas actuales y pendientes. [Evidencia](VALIDATION.md) · [Evaluación de todas las apps](REVIEW.md).
+Aquí reúno mis proyectos por lo que aportan. En cada ficha cuento qué he implementado, qué he comprobado y qué queda pendiente. [Evidencia](VALIDATION.md) · [Evaluación de todas las apps](REVIEW.md).
 
 ## Más proyectos
 
