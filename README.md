@@ -1,35 +1,34 @@
 <p align="left"><strong>EGODIVERGENTE</strong> · PORTAFOLIO</p>
 
-# Ideas que se convierten en herramientas.
+# Crear. Organizar. Simplificar.
 
-Construyo aplicaciones Android, productos con IA y automatizaciones que conectan dispositivos. Mi punto de partida es una necesidad concreta: crear, organizar o simplificar una tarea cotidiana.
+Diseño y desarrollo aplicaciones para convertir necesidades concretas en productos útiles: creación con IA, bibliotecas multimedia y organización cotidiana.
 
-**Android nativo · IA aplicada · Automatización · Diseño de producto**
+**Android nativo · Productos con IA · Diseño de interfaces · Automatización**
 
-## Proyectos seleccionados
+## Tres proyectos para empezar
 
-| Proyecto | Qué resuelve | Explorar |
+| Proyecto | Qué aporta | Explorar |
 | :--- | :--- | :--- |
-| **ALEXIA** | Una biblioteca creativa por proyectos, con archivos locales e integración con el selector de Android. | [Ficha](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#alexia) |
-| **NEXUS** | Un espacio Android para crear y gestionar contenido con modelos de IA, mediante formularios adaptados a cada modelo. | [Ficha](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nexus) |
-| **AXEL TV** | Una experiencia para Android TV con mando móvil y conexión entre dispositivos. | [Ficha](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#axel-tv) |
-| **AXEL Control** | Un panel de Windows para consultar el estado del ecosistema AXEL y gestionar su conector local. | [Ficha](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#axel-control) |
-| **CineVault48** | Una galería Android para clasificar imágenes creativas, con retención temporal y modo de simulación. | [Código público](https://github.com/vidaltb94-collab/CineVault48) |
-| **Selector de compilaciones** | Distribuye las compilaciones según compatibilidad y recursos disponibles, protegiendo el uso interactivo. | [Ficha](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#selector-de-compilaciones) |
+| **01 · NEXUS** | Un estudio de creación con IA para Android y escritorio: modelos, parámetros, referencias y biblioteca multimedia en un mismo flujo. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nexus) |
+| **02 · NutriShift** | Planificación de comidas adaptada a turnos, conectada con recetas, raciones, despensa y lista de compra. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nutrishift) |
+| **03 · ALEXIA** | Una biblioteca creativa por proyectos que integra imágenes, vídeo y audio con el almacenamiento y los selectores de Android. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#alexia) |
+
+La selección combina diseño de producto, utilidad, profundidad técnica y evidencia disponible. Las fichas explican qué está comprobado y qué sigue en desarrollo.
+
+## También en desarrollo
+
+**AXEL TV** explora la experiencia entre televisión y móvil. **AXEL Music** trabaja la reproducción y organización de audio local. [Ver alcance y estado](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#otros-proyectos).
 
 ## Cómo trabajo
 
-- **Producto primero:** definir el problema y reducir los pasos necesarios para resolverlo.
-- **Desarrollo asistido por IA:** revisar las propuestas, integrar el código y contrastar los resultados con pruebas y dispositivos reales.
-- **Privacidad desde el diseño:** archivos locales cuando procede, permisos acotados y credenciales fuera del código.
-- **Continuidad:** fuentes versionadas, documentación de decisiones y separación entre prototipos, pruebas y entregas.
+- Partir del problema y reducir los pasos para resolverlo.
+- Usar IA durante el desarrollo, revisar el código y contrastar los resultados con pruebas.
+- Cuidar archivos, permisos y continuidad de los datos.
+- Mantener fuentes versionadas y distinguir prototipos, pruebas y entregas.
 
-## Tecnologías presentes en mis proyectos
-
-Kotlin · Jetpack Compose · Material 3 · Room / SQLite · WorkManager · Media3 · Python · PowerShell · C# / .NET · Linux · Git
-
-Los proyectos tienen distintos grados de madurez. Las [fichas](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md) explican su alcance y el estado de la documentación; el código privado conserva su acceso restringido.
+Kotlin · Jetpack Compose · Material 3 · Room / SQLite · WorkManager · Media3 · Python · PowerShell · Git
 
 ---
 
-[Ver las fichas de proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md) · [Explorar CineVault48](https://github.com/vidaltb94-collab/CineVault48)
+[Explorar las fichas de producto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md)
