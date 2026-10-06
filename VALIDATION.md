@@ -1,117 +1,60 @@
 # Evidencia y límites de los proyectos
 
-Este documento conserva la evidencia utilizada para seleccionar los proyectos destacados. La revisión del **6 de octubre de 2026** compara documentación, fuentes accesibles, capturas reales e informes existentes; no es una nueva prueba completa de todas las aplicaciones.
-
-[Volver al perfil](https://github.com/vidaltb94-collab)
-
-## NEXUS
-
-**01 · Creación con IA · Android y escritorio · Fuentes privadas**
-
-Un estudio para elegir modelos, introducir parámetros, aportar referencias y gestionar resultados de imagen, vídeo y audio.
-
-**Por qué encabeza la selección:** combina el mayor alcance de producto de las candidatas revisadas con una interfaz de escritorio coherente y una arquitectura que adapta los formularios a las capacidades de cada modelo.
-
-- **Diseño:** creación, biblioteca y asistente separados en tres destinos; actividad y resultados cerca del flujo de creación.
-- **Implementación:** catálogo de modelos, formularios dinámicos, seguimiento de trabajos y reproducción multimedia. Android usa Kotlin, Compose, WorkManager y Media3; el escritorio tiene su propia interfaz.
-- **Evidencia revisada:** capturas reales de la revisión de escritorio del 6 de octubre, verificaciones de navegación, conservación del prompt, importación local y rechazo de importaciones inválidas. El informe de la instalación registró 838 modelos, 85 trabajos y 84 resultados, sin modificar el estado ni las credenciales.
-- **Límite:** las comprobaciones de esa revisión no realizaron llamadas de pago. La captura de laboratorio utiliza material de prueba; no acredita una generación nueva ni el funcionamiento actual de cada proveedor. El informe también registró el asistente como no cargado durante esa comprobación.
-
-## NutriShift
-
-**02 · Organización cotidiana · Android · Fuentes privadas**
-
-Conecta la planificación de comidas con turnos, recetas, raciones, despensa y compra. Su utilidad está en reducir decisiones y aprovechar lo que ya hay disponible.
-
-**Por qué ocupa el segundo puesto:** tiene el lenguaje visual más definido de las capturas móviles comparadas y flujos cotidianos respaldados por pruebas de lógica y del dispositivo.
-
-- **Diseño:** inicio con una acción principal, vista semanal y acceso directo a despensa y compra; identidad visual consistente.
-- **Implementación:** lotes, caducidad, congelación, raciones, consumo reversible y recetas versionadas para conservar el historial.
-- **Evidencia revisada:** captura real de la versión 2.2 y fuentes e informes de la 2.3. Los XML registran **42 pruebas JVM sin errores ni fallos**; el informe Android registra **28 pruebas superadas en el S25**.
-- **Límite:** la revisión visual completa de la versión 2.3 seguía pendiente en la documentación consultada. El intercambio con ChatGPT es manual y revisable; no se presenta como una integración automática. Las estimaciones nutricionales no son una validación clínica.
-
-## Corte
-
-**03 · Edición de vídeo · Android nativo · Fuentes privadas**
-
-Un editor multipista con proyectos locales, vídeo y audio vinculados, edición ripple, deshacer, autoguardado, keyframes, corrección de color, LUT y rótulos. Comparte la composición entre la previsualización y la exportación.
-
-**Por qué entra en los destacados:** tiene una arquitectura de edición propia y un alcance multimedia considerable, con pruebas documentadas sobre las matemáticas del timeline y sobre los archivos exportados. Amplía la presentación más allá de las herramientas con IA.
-
-- **Implementación revisada:** módulos de modelo, timeline y almacenamiento; Kotlin, Compose y Media3. Edición no destructiva, mezcla de audio, control de huecos entre pistas y exportación mediante un servicio con validación del archivo resultante.
-- **Evidencia actual:** el 6 de octubre se comparó el proyecto recuperado con la app instalada: coinciden paquete, versión, certificado documentado y las 153 clases de producción declaradas. Es una reconciliación estática, sin afirmar identidad binaria.
-- **Pruebas históricas:** ARCHITECTURE.md documenta 83 pruebas JVM y 20 pruebas instrumentadas sin fallos en el S25, además de exportaciones y medidas de imagen/audio. Esos resultados documentados no se han repetido en esta recuperación.
-- **Límites:** varias interacciones de la interfaz de fase 2 siguen pendientes de revisión manual. Proxies, HDR, curvas de velocidad y el render de altas luces, sombras y nitidez no están completos. No se presenta como un editor terminado en todas sus funciones.
-
-## ALEXIA
-
-**04 · Biblioteca creativa · Android · Fuentes privadas**
-
-Organiza material creativo por proyectos y conecta su índice local con los archivos y las herramientas de Android.
-
-**Por qué forma parte de la selección:** aporta profundidad en almacenamiento e interoperabilidad, con evidencia concreta de conservación de originales e integridad de archivos.
-
-- **Diseño de sistema:** separar el índice de la biblioteca del almacenamiento de los archivos.
-- **Implementación:** Kotlin, Room, Storage Access Framework, DocumentsProvider e índice legible por agentes.
-- **Evidencia revisada:** informe de **63 pruebas unitarias sin errores ni fallos** y comprobación histórica v68 en Pixel de imagen, vídeo, audio, SHA-256, idempotencia, conservación del original, DocumentsProvider y recuperación de escrituras interrumpidas.
-- **Límite:** la fuente recuperada v69 y la versión instalada registrada v68 requieren reconciliación. Esta selección se apoya principalmente en arquitectura y pruebas; no atribuye a ALEXIA una superioridad visual que no se ha comprobado en esta revisión.
-
-## Otros proyectos
-
-### AXEL TV
-
-**Experiencia entre dispositivos · Android TV y móvil**
-
-Mando móvil, widget y puente de comunicación. Es una buena segunda línea por su interacción entre dispositivos. Existen entregas y pruebas históricas del mando; las variantes de TV aún necesitan reconciliación antes de presentarlas como un conjunto actual validado.
-
-### AXEL Music
-
-**Audio local · Android móvil y TV**
-
-Biblioteca, cola, listas y recorte AAC/M4A. Las capturas muestran una interfaz propia y funciones locales concretas. Queda en segunda línea porque la documentación v0.2.1 vincula la reproducción a la actividad: la continuidad mediante servicio multimedia en segundo plano sigue pendiente. La conexión con YouTube Music es un relevo a su app oficial.
-
-### AXELTask
-
-**Agenda y tareas · Android · Fuentes privadas recuperadas**
-
-Código para agenda, tareas, interpretación de texto, detección de conflictos e integración con el calendario del dispositivo. Tiene pantallas de preparación, movilidad y privacidad, además de la agenda.
-
-La fuente recuperada declara package ai.axel.tasker, versión 1.0.0 y versionCode 1, coincidentes con la consulta de la instalación. Los informes existentes del 5 de septiembre registran **8 pruebas unitarias sin fallos ni errores** de interpretación y conflictos. No se han ejecutado de nuevo ni se ha revisado aquí su interfaz actual en el móvil. Es una candidata a la selección principal, pendiente de esa comparación.
-
-### AXELDROBE
-
-**Armario y conjuntos · Android · Fuentes privadas recuperadas**
-
-Organiza prendas, propone conjuntos según disponibilidad, contexto e historial, y contempla planificación y lavandería. La lógica de sugerencias recuperada funciona mediante reglas locales.
-
-La fuente declara package com.axel.axeldrobe.debug, versión 0.2.0-fixed y versionCode 2, coincidentes con la instalación consultada. Los informes existentes del 21 de septiembre registran **6 pruebas unitarias sin fallos ni errores** de interpretación de prendas y generación de conjuntos. No se ha validado aquí la experiencia actual del móvil. Es una candidata a la selección principal, pendiente de comparar diseño y flujos reales.
-
-### DisAster
-
-**Organización de archivos · Candidata pendiente de evaluación completa**
-
-La edición Android instalada 3.7.3-permfix se ha recuperado completa desde su APK: recursos, interfaz web y código Smali. Se reconstruyó en el ASUS; las clases DEX coinciden y los assets mantienen sus bytes. Es una reconstrucción, con fuentes nativas originales pendientes. Su interfaz y sus flujos actuales todavía requieren evaluación funcional para decidir su lugar entre los destacados. La variante web se conserva por separado.
-
-### Herramientas de apoyo
-
-CineVault48, AXEL Control y el selector de compilaciones conservan su valor como herramientas especializadas e infraestructura. No encabezan esta presentación. [CineVault48 mantiene su código público](https://github.com/vidaltb94-collab/CineVault48).
-
----
-
-La selección es editorial y provisional, basada en la evidencia accesible. No es una clasificación completa: Las fuentes de AXELTask y AXELDROBE ya se han recuperado; falta comparar su experiencia actual y revisar las demás apps pendientes. [Consultar el catálogo completo y sus pendientes](CATALOG.md). Los repositorios privados conservan su acceso restringido.
-
-## Alcance de la auditoría de GitHub
-
-La auditoría de organización del 6 de octubre revisó metadatos, ramas, portadas, documentos de continuidad y la presentación visible de los 49 repositorios de la cuenta. No repitió las pruebas de todas las apps ni abrió aplicaciones en el móvil principal. La selección principal combina propósito de producto, profundidad implementada y evidencia accesible; AXEL Task y AXEL Drobe quedan como candidatas para una comparación actual de su experiencia.
-
-La captura añadida de NEXUS corresponde a la interfaz real del escritorio ejecutada con datos de laboratorio, sin conexión ni generación de pago. Las imágenes y el estado de ejemplo no acreditan una nueva generación. No se añadieron imágenes imaginadas de las otras aplicaciones.
+Revisión del **6 de octubre de 2026**. Se compararon fuentes de las 35 entradas Android y 10 ediciones web/servicios; la cobertura funcional actual es parcial. La [matriz individual](REVIEW.md) distingue PASS concreto, parcial, fallo reproducido, bloqueado y no probado. Estos reconocimientos son editoriales por especialidad; no son premios externos ni una clasificación global de todas las apps funcionando.
 
 ## AXEL
 
-La revisión de fuentes del 6 de octubre identificó en la edición Native el enrutamiento real a Codex CLI, Grok y Antigravity/AGY, además de streaming, cancelación y estados de proveedor. El código MCP implementa listado, búsqueda por nombre y tamaño, inspección y planes de copia/movimiento de archivos; implementa también consultas ADB, captura, inspección de UI, logs y apertura explícita de aplicaciones.
+**Fuente:** puentes Codex CLI/Grok/AGY, streaming, cancelación, trabajos y servicios de archivos/ADB. Búsqueda por nombre y tamaño no acredita reconocer personas en fotografías. Rutas declaradas de OCR, transcripción y generación requieren sus dependencias y permisos.
 
-Las rutas multimedia incluyen OCR, transcripción, adjuntos, carga de referencias y generación mediante AtlasCloud, además de flujos Android de intercambio y automatización. La búsqueda de archivos comprobada en esa capa no acredita reconocimiento semántico de personas en fotos.
+**Actual:** se consultaron servicios del S25 sin tocar su pantalla. Health respondió 200; una ruta esperada de capacidades respondió 404. Un servicio de capacidades respondió, pero sus valores declarados no demuestran ejecución; la consulta protegida respondió 401 sin credenciales. Hay que reconciliar el servicio en ejecución con la fuente antes de afirmar funcionamiento completo. Play Protect rechazó la copia Native en Pixel; no se eludió la comprobación.
 
-Esta evidencia es una lectura del código recuperado. No se ejecutaron aquí órdenes sobre el teléfono ni generaciones de pago; no se acredita disponibilidad actual de todos los puentes. Algunas capacidades se anuncian en un registro y usan un flujo dedicado: su declaración no basta para dar por probada la cadena completa. La experiencia histórica relatada por el autor no sustituye esa comprobación de la instalación actual.
+**Pendiente:** comprobar conversación, enrutamiento a proveedor y herramienta con resultado verificable. No se hicieron generaciones de pago. Native, WebView, Portable y AXEL AI se conservan separados.
 
-La edición Native y la WebView antigua `ai.axel.app` tienen identidades diferentes. Se presentan bajo el producto AXEL, manteniendo la separación de sus fuentes y versiones. El README Native anterior describía solo su primera vertical Gemini y no representaba todo el alcance existente en sus archivos.
+## AXEL Editor de vídeo
+
+**Fuente:** modelo temporal, timeline, ripple, undo, almacenamiento atómico, keyframes y grafo Media3 de composición compartido. La comparación estática anterior registró paquete, versión, certificado documentado y 153 clases de producción coincidentes; no demuestra identidad binaria.
+
+**Actual:** se copió el APK instalado en S25, se verificó SHA-256 y se instaló en un Pixel sin este paquete. Se creó un proyecto y abrió el editor con pistas V1/V2/A1/A2. Importar, editar y exportar no se han repetido en esta sesión. El nuevo nombre elegido por el autor se aplica a las fuentes y la presentación; el APK probado conserva su nombre anterior, Corte.
+
+**Histórico:** ARCHITECTURE.md documenta 83 pruebas JVM y 20 instrumentadas, además de medidas de exportación. No se reejecutaron. Proxies, HDR, curvas de velocidad y algunos controles de procesamiento siguen pendientes. Una función no recibe PASS por aparecer en el timeline.
+
+## ALEXIA
+
+**Fuente:** Room, SAF, DocumentsProvider y recuperación de escrituras. **Actual:** apertura, proyecto y filtro de tipo en Pixel, sin alterar originales. Pixel tenía versionCode 63; S25, versionCode 68. No se presenta una prueba del Pixel como validación del APK del S25.
+
+**Histórico:** informe de 63 pruebas unitarias y validación v68 de importación, hash, idempotencia, conservación del original y proveedor de documentos. Son evidencia previa, no resultados repetidos hoy. Importación y acceso entre aplicaciones actuales pendientes.
+
+## NEXUS
+
+**Actual Android:** catálogo guardado visible y aviso de recuperación de conexión. Esto prueba navegación del catálogo local, no disponibilidad de los modelos ni generación nueva.
+
+**Revisión separada de escritorio:** captura real y verificaciones de navegación, conservación de prompt, importación local y rechazo de importaciones inválidas con datos de laboratorio. El informe de esa revisión registró 838 modelos, 85 trabajos y 84 resultados; son datos del estado revisado. No se hicieron llamadas de pago y el asistente figuró como no cargado durante esa comprobación.
+
+## NutriShift
+
+**Fuente:** menú contextual, turnos, despensa, lotes, caducidad y consumo reversible. **Actual:** APK copiado y verificado; flujo principal no repetido.
+
+**Histórico:** XML con 42 pruebas JVM sin errores/fallos e informe de 28 pruebas Android en S25. La revisión visual completa de la 2.3 estaba pendiente en esos documentos. Las estimaciones nutricionales no son validación clínica.
+
+## AudioTrim
+
+**PASS actual limitado al WAV:** fixture sintético de 4 s, PCM mono de 16 bits y 48 kHz. Abrir → seleccionar → recortar → guardar por SAF → recuperar archivo. Exportación de 143.760 muestras, duración 2,995 s, PCM idéntico al tramo original.
+
+- SHA-256 original: `45476dcdc32bf0aae2841292ee9b6d19b334ced9446d92544443716da600a28a`.
+- SHA-256 exportación: `7cfb2c9095d1ed175cffc4de5e41ab3cad6d204d88bcc2513c1540dc0869d7fa`.
+
+MP3, M4A y extracción de vídeo no validados en esta sesión. Recortar Audio es otra app y no hereda este PASS.
+
+## Hallazgos en candidatas
+
+- **AXEL Task:** la petición de un hueco de dos horas devolvió opciones de 30 minutos. Se reprodujo en el chat de la app. La instalación nueva contiene datos personales predefinidos, excluidos de capturas públicas.
+- **AXEL Drobe:** tipo y color de una prenda fueron reconocidos, pero el nombre quedó en su primera letra. No se completó el flujo de conjuntos. Pixel API 37 mostró una advertencia de alineación de librerías de 16 KB.
+- **ClipTree:** se creó y mostró un fragmento sintético en su carpeta. Copia al portapapeles y persistencia tras reiniciar pendientes. Su repositorio JSON no acredita un gestor seguro de contraseñas.
+- **DisAster Web:** operaciones sobre registros de ejemplo, separadas de DisAster Android. No se atribuye gestión real del almacenamiento del teléfono a esa demo.
+- **PhotoLayers:** ampliación por interpolación y enfoque en el código revisado; no superresolución neuronal.
+
+## Alcance y límites
+
+El Pixel quedó reservado después para otra compilación y pruebas de NEXUS; se respetó esa reserva y no se siguió operando su UI. Algunas funciones necesitan TV, robot, servicios autenticados o un entorno profesional que no se validaron aquí. Los tiempos de apertura y muestras aisladas de memoria no sirven para clasificar rendimiento sostenido.
+
+La documentación conserva pendientes por app. Se mantienen privadas fuentes, credenciales, información profesional, datos personales, capturas y XML sin revisar. No se eliminó ningún original, se borraron datos de aplicaciones o se eludió Play Protect.

@@ -1,77 +1,65 @@
 # Productos y decisiones de diseño
 
-Esta selección presenta agentes conectados al teléfono, creación con IA, edición multimedia, almacenamiento Android y organización cotidiana. Los productos siguen en desarrollo. [Pruebas, fechas y límites](VALIDATION.md) · [Catálogo completo](CATALOG.md).
+Seis casos muestran aportaciones distintas del ecosistema. La selección considera implementación propia, utilidad, singularidad y evidencia. [Evaluación de 35 entradas Android y 10 ediciones web/servicios](REVIEW.md) · [Pruebas y límites](VALIDATION.md).
 
 ## AXEL
 
-**01 · Agentes con acceso al entorno Android · Termux y app Android · Fuentes privadas**
+**Integración de agentes · Android y Termux · Fuentes privadas**
 
-AXEL conecta la conversación con el entorno del teléfono: agentes locales, archivos, herramientas multimedia y acciones sobre otras aplicaciones. Su propuesta es resolver una tarea que necesita contexto y ejecución, desde una misma interfaz.
+AXEL conecta conversación, contexto del teléfono y herramientas: agentes, archivos, acciones Android y flujos multimedia desde una interfaz propia. El trabajo de integración incluye enrutamiento a Codex CLI, Grok y Antigravity/AGY, streaming, cancelación y trabajos; los servicios incluyen archivos y consultas ADB.
 
-Las fuentes conservan un puente que enruta **Codex CLI, Grok y Antigravity/AGY**, respuestas en streaming, cancelación y trabajos. Los servicios locales incluyen búsqueda e inspección de archivos, OCR, transcripción y acceso a Android mediante ADB. La app aporta conversaciones, adjuntos y flujos entre aplicaciones.
+Las rutas multimedia permiten adjuntos, OCR, transcripción y uso de referencias con proveedores configurados. La edición Native, la antigua WebView, el archivo Portable y AXEL AI con servidor tienen identidades y dependencias distintas.
 
-En multimedia, incorpora rutas para usar imágenes de referencia, generar mediante proveedores configurados y presentar o guardar los resultados. La disponibilidad depende del proveedor, los permisos y los puentes de cada entorno; una entrada de catálogo no prueba que toda la cadena esté operativa.
+**Aportación destacada:** coordinar agentes y herramientas para actuar sobre contexto local. La revisión actual encontró diferencias entre el servicio activo y las rutas del código recuperado; completar conversación → herramienta → resultado sigue pendiente. [Evidencia](VALIDATION.md#axel).
 
-**Por qué encabeza la selección:** la integración entre agentes, sistema Android, archivos y herramientas propias es uno de los trabajos más singulares del ecosistema. Su valor está en coordinar esas capas para actuar sobre un contexto real. El repositorio Native conserva una evolución de la app; las ediciones WebView y Native se documentan por separado. [Evidencia y alcance](VALIDATION.md#axel).
+## AXEL Editor de vídeo
 
+**Ingeniería multimedia · Android nativo · Fuentes privadas**
 
-## NEXUS
+Editor local multipista con vídeo y audio vinculados, timeline, ripple, deshacer, autoguardado, keyframes, color, LUT y rótulos. La arquitectura separa modelo, operaciones temporales, almacenamiento e interfaz y comparte el grafo Media3 entre previsualización y exportación.
 
-**02 · Estudio creativo · Android y escritorio · Fuente privada**
+**Aportación destacada:** modelo temporal propio, edición no destructiva y composición coherente entre reproducción y archivo exportado. Su dificultad procede de coordinar tiempo, pistas, estados y formatos. En la revisión actual se creó un proyecto y se abrió el editor; existen pruebas históricas de lógica y exportaciones, sin atribuirlas a una nueva validación completa.
 
-Crear con distintos modelos suele exigir cambiar de interfaz, reconstruir parámetros y buscar después los resultados. NEXUS reúne la elección del modelo, sus opciones, las referencias y la biblioteca en un mismo flujo.
-
-El escritorio separa **Crear**, **Biblioteca** y **Asistente**. El catálogo adapta los formularios a las capacidades del modelo y conserva el seguimiento de trabajos. La aplicación Android usa Kotlin, Compose, WorkManager y Media3.
-
-![NEXUS: interfaz de creación del escritorio con datos de laboratorio](assets/nexus-create-lab.png)
-
-*Captura real de la interfaz del escritorio con datos de laboratorio, sin conexión ni generación de pago. El resultado mostrado es material de prueba.*
-
-**Por qué está entre los destacados:** combina un producto amplio con una interfaz de escritorio revisada y un problema concreto de creación y gestión de resultados. La revisión disponible acredita navegación y flujos locales; la disponibilidad actual de cada proveedor necesita su propia comprobación. [Evidencia](VALIDATION.md#nexus).
-
-
-## Corte
-
-**03 · Editor de vídeo multipista · Android · Fuente privada**
-
-Corte permite construir proyectos locales con vídeo y audio vinculados, editar un timeline y exportar la composición. Su arquitectura separa el modelo, las operaciones de edición y el almacenamiento de la interfaz.
-
-La implementación incluye edición ripple, deshacer, autoguardado, keyframes, color, LUT y rótulos. Comparte el grafo de composición entre previsualización y exportación mediante Media3.
-
-**Por qué está entre los destacados:** muestra profundidad técnica en edición y exportación multimedia. La fuente se contrastó estáticamente con la instalación y existen pruebas históricas documentadas. Varias interacciones de fase 2 y funciones de procesamiento aún requieren completar su validación o implementación. [Evidencia](VALIDATION.md#corte).
-
+El autor eligió este nombre el 6 de octubre. El proyecto antes se presentaba como Corte; conserva paquete y repositorio. El recurso del lanzador y el encabezado ya se han cambiado en las fuentes. La actualización instalada está pendiente. Varias funciones de fase 2 siguen pendientes de completar o validar. [Evidencia](VALIDATION.md#axel-editor-de-vídeo).
 
 ## ALEXIA
 
-**04 · Biblioteca creativa por proyectos · Android · Fuente privada**
+**Integridad e interoperabilidad · Android · Fuentes privadas**
 
-ALEXIA organiza imágenes, vídeos y audio por proyectos y conecta su índice con el almacenamiento de Android. Su trabajo central es conservar referencias utilizables a los archivos y hacerlos accesibles desde otras herramientas.
+ALEXIA organiza imágenes, vídeos y audio por proyectos y conecta su índice con el almacenamiento de Android. Usa Room, Storage Access Framework y DocumentsProvider, separando el índice de los archivos originales.
 
-Usa Kotlin, Room, Storage Access Framework y DocumentsProvider. La arquitectura distingue el índice de la biblioteca del almacenamiento de los originales y contempla la recuperación de escrituras interrumpidas.
+**Aportación destacada:** conservar referencias útiles entre aplicaciones y recuperar escrituras interrumpidas. La revisión actual comprobó apertura, navegación y filtrado; la integridad completa se apoya en pruebas históricas identificadas. Las versiones de Pixel y S25 son diferentes. [Evidencia](VALIDATION.md#alexia).
 
-**Por qué está entre los destacados:** aporta profundidad en integridad e interoperabilidad Android. La evidencia disponible incluye pruebas históricas con archivos y hashes; las variantes recuperadas e instaladas necesitan su reconciliación correspondiente. [Evidencia](VALIDATION.md#alexia).
+## NEXUS
 
+**Producto creativo · Android y escritorio · Fuentes privadas**
+
+NEXUS reúne modelos, opciones, referencias, trabajos y resultados de imagen, vídeo y audio. Los formularios se adaptan a las capacidades del modelo; el escritorio organiza Crear, Biblioteca y Asistente.
+
+![NEXUS: interfaz real de creación con datos de laboratorio](assets/nexus-create-lab.png)
+
+*Captura real de escritorio con datos de laboratorio, sin conexión ni generación de pago. El resultado mostrado es material de prueba.*
+
+**Aportación destacada:** continuidad del flujo desde elegir un modelo hasta gestionar sus resultados. Android mostró el catálogo guardado mientras recuperaba conexión; este estado no acredita la disponibilidad de todos los proveedores. [Evidencia](VALIDATION.md#nexus).
 
 ## NutriShift
 
-**05 · Comidas adaptadas a turnos · Android · Fuente privada**
+**Utilidad cotidiana · Android · Fuentes privadas**
 
-Planificar comidas resulta difícil cuando cambian los horarios y la despensa. NutriShift conecta el menú con los turnos, las recetas, las raciones preparadas, las existencias y la lista de compra.
+NutriShift conecta menús y turnos con recetas, raciones preparadas, despensa, caducidad y compra. La lógica contempla consumo reversible, lotes y conservación de elecciones manuales.
 
-La lógica conserva recetas versionadas y registra el consumo de forma reversible. Contempla lotes, caducidad, congelación y preparación de varias raciones. Las consultas a ChatGPT se copian y revisan manualmente antes de incorporar propuestas.
+**Aportación destacada:** adaptar planificación y existencias a horarios que cambian. Se ha revisado la lógica y la evidencia histórica; el flujo principal de la instalación actual todavía no se ha repetido. Las consultas a ChatGPT siguen siendo manuales y revisables. [Evidencia](VALIDATION.md#nutrishift).
 
-**Por qué está entre los destacados:** ofrece utilidad cotidiana y flujos respaldados por informes de lógica y dispositivo. Se han revisado capturas e informes existentes; la revisión visual completa de la versión 2.3 seguía pendiente en esa documentación. [Evidencia](VALIDATION.md#nutrishift).
+## AudioTrim
 
+**Precisión de una herramienta local · Android · Fuentes privadas**
 
-## Otros proyectos
+AudioTrim abre medios y recorta audio mediante rutas específicas para formatos. La implementación incluye tratamiento propio de RIFF/WAV y otras estrategias para MP3/AAC.
 
-| Producto | Qué aporta | Estado de la evaluación |
-| :--- | :--- | :--- |
-| **AXEL Task** | Agenda, tareas, interpretación de texto y conflictos de horario. | Fuentes recuperadas; pruebas históricas de lógica. Experiencia actual por comparar. |
-| **AXEL Drobe** | Prendas, conjuntos, planificación y lavandería con reglas locales. | Fuentes recuperadas; pruebas históricas de sugerencias. Experiencia actual por comparar. |
-| **ClipTree** | Fragmentos de texto en carpetas, portapapeles y burbuja flotante. | Fuentes recuperadas; validación actual pendiente. |
-| **AXEL TV** | Mando móvil, widget y comunicación con Android TV. | Evidencia histórica del mando; variantes TV por reconciliar. |
-| **AXEL Music** | Audio local, cola y listas en móvil y TV. | Interfaz y código revisados; reproducción persistente en segundo plano pendiente. |
-| **DisAster** | Organización de archivos en Android y variantes web. | Android 3.7.3 reconstruido y recompilado desde APK; fuente nativa original y evaluación funcional pendientes. |
+**Aportación destacada en esta sesión:** abrió un WAV sintético, recortó la selección y guardó el resultado por el selector Android. El archivo recuperado tiene PCM idéntico al tramo original. Es un resultado comprobado de principio a fin; los otros formatos conservan su validación pendiente. [Evidencia y hashes](VALIDATION.md#audiotrim).
 
-Los repositorios de fuentes privadas conservan su acceso restringido. Las herramientas internas y los archivos históricos están en el [catálogo](CATALOG.md); la selección editorial no convierte una recuperación de código en una entrega validada.
+## Candidatas y herramientas
+
+AXEL Task y AXEL Drobe muestran lógica de dominio considerable, con fallos actuales documentados antes de promoverlas. CreatorVault, Despeja, PhotoLayers, PromptClip, ClipTree y AXEL Console merecen evaluación de sus flujos completos. Las herramientas TV necesitan su dispositivo objetivo.
+
+[Catálogo](CATALOG.md) · [Resultados individuales y pendientes](REVIEW.md). Las fuentes privadas mantienen su acceso restringido.

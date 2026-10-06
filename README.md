@@ -6,29 +6,30 @@ Desarrollo productos Android y herramientas de escritorio a partir de necesidade
 
 **Android nativo · Multimedia · IA aplicada · Herramientas locales**
 
-## Proyectos destacados
+## Proyectos destacados por especialidad
 
-| Proyecto | Problema que resuelve | Explorar |
-| :--- | :--- | :--- |
-| **01 · AXEL** | Conecta agentes de Codex, Grok y Antigravity/AGY con archivos, herramientas locales y acciones sobre Android. | [Ficha](PROJECTS.md#axel) |
-| **02 · NEXUS** | Reúne modelos de IA, parámetros, referencias y resultados en un estudio para Android y escritorio. | [Ficha](PROJECTS.md#nexus) |
-| **03 · Corte** | Lleva la edición de vídeo multipista, el audio y la exportación a una aplicación Android local. | [Ficha](PROJECTS.md#corte) |
-| **04 · ALEXIA** | Organiza material creativo por proyectos y lo conecta con los archivos y selectores de Android. | [Ficha](PROJECTS.md#alexia) |
-| **05 · NutriShift** | Conecta los turnos con las comidas, las raciones, la despensa y la compra. | [Ficha](PROJECTS.md#nutrishift) |
+| Proyecto | Qué aporta | Especialidad |
+| --- | --- | --- |
+| **AXEL** | Agentes Codex, Grok y Antigravity/AGY con archivos, herramientas y acceso al entorno Android. | [Integración de agentes](PROJECTS.md#axel) |
+| **AXEL Editor de vídeo** | Timeline multipista, edición no destructiva, keyframes y composición multimedia. | [Ingeniería multimedia](PROJECTS.md#axel-editor-de-vídeo) |
+| **ALEXIA** | Biblioteca por proyectos conectada con archivos y selectores de Android. | [Integridad e interoperabilidad](PROJECTS.md#alexia) |
+| **NEXUS** | Modelos, formularios, referencias, trabajos y resultados en Android y escritorio. | [Producto creativo](PROJECTS.md#nexus) |
+| **NutriShift** | Turnos, menús, despensa, raciones y compra. | [Utilidad cotidiana](PROJECTS.md#nutrishift) |
+| **AudioTrim** | Recorte de audio local con un flujo WAV verificado muestra a muestra. | [Precisión en una herramienta local](PROJECTS.md#audiotrim) |
 
-Las fichas explican el alcance implementado y el estado de cada producto. [Evidencia y límites](VALIDATION.md).
+La selección reconoce aportaciones distintas. Las fichas identifican implementación, pruebas actuales y pendientes. [Evidencia](VALIDATION.md) · [Evaluación de todas las apps](REVIEW.md).
 
 ## Más proyectos
 
-**AXEL Task** · agenda y tareas. **AXEL Drobe** · armario y conjuntos. **ClipTree** · fragmentos de texto y portapapeles. **AXEL TV** · interacción entre televisión y móvil.
+**AXEL Task** · agenda y tareas. **AXEL Drobe** · armario y conjuntos. **ClipTree** · fragmentos y portapapeles. **Despeja** · ideas y pendientes. **AXEL TV** · interacción entre televisión y móvil.
 
-[Explorar el catálogo](CATALOG.md) · [Ver las fichas de producto](PROJECTS.md)
+[Catálogo completo](CATALOG.md) · [Fichas de producto](PROJECTS.md)
 
 ## Cómo trabajo
 
-- Convertir un problema cotidiano en un flujo claro y manejable.
-- Cuidar los archivos, los permisos y la continuidad de los datos.
-- Usar IA durante el desarrollo, revisar el código y contrastar los resultados con pruebas.
-- Mantener fuentes versionadas y documentar qué está implementado y qué está probado.
+- Convertir problemas cotidianos en flujos concretos.
+- Cuidar archivos, permisos y continuidad de los datos.
+- Usar IA durante el desarrollo, revisar código y comprobar resultados.
+- Conservar fuentes versionadas y distinguir lo implementado de lo probado.
 
 Kotlin · Jetpack Compose · Material 3 · Room / SQLite · WorkManager · Media3 · Python · TypeScript · Git

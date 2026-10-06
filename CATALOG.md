@@ -4,7 +4,7 @@ El catálogo organiza productos, variantes y herramientas de apoyo. Los reposito
 
 ## Productos destacados
 
-[AXEL · NEXUS · Corte · ALEXIA · NutriShift](PROJECTS.md). Consultar [su alcance y evidencia](VALIDATION.md).
+[AXEL · AXEL Editor de vídeo · ALEXIA · NEXUS · NutriShift · AudioTrim](PROJECTS.md). Consultar [la evidencia](VALIDATION.md) y [la evaluación individual](REVIEW.md).
 
 ## Creación, archivos y multimedia
 
@@ -14,11 +14,11 @@ El catálogo organiza productos, variantes y herramientas de apoyo. Los reposito
 | **CineVault 48** | Galería temporal por proyectos con retención y simulación. | [Prototipo con código público](https://github.com/vidaltb94-collab/CineVault48). Conserva una copia privada separada. |
 | **DisAster** | Organización de archivos. | App Android y variantes web separadas. La edición Android instalada 3.7.3 conserva una reconstrucción compilable. |
 | **Keyframe Sorter** | Herramienta Android de organización de imágenes y keyframes. | App distinta de DisAster, aunque sus archivos compartan repositorio. |
-| **AudioTrim** | Apertura de audio o vídeo y recorte de audio. | Fuentes recuperadas; app distinta de Recortar Audio. |
+| **AudioTrim** | Apertura de audio o vídeo y recorte de audio. | Flujo WAV probado de principio a fin; otros formatos pendientes. App distinta de Recortar Audio. |
 | **Recortar Audio** | Recorte con reproducción, forma de onda y exportación. | Fuentes recuperadas; validación actual pendiente. |
-| **PhotoLayers Studio** | Proyecto de edición de imágenes por capas. | Fuentes recuperadas; experiencia actual pendiente. |
+| **PhotoLayers Studio** | Edición de imágenes por capas y máscaras; ampliación por interpolación y enfoque. | Fuentes recuperadas; experiencia actual pendiente. |
 | **PromptClip** | Detección y copia de prompts visibles mediante accesibilidad. | Fuentes recuperadas; los permisos y las versiones tienen documentación propia. |
-| **Despeja** | Aplicación Android conservada desde su instalación. | Reconstrucción desde APK compilada; proyecto Kotlin original pendiente. Su propósito y flujos actuales requieren evaluación. |
+| **Despeja** | Captura de ideas y pendientes con clasificación y planificación. | Reconstrucción desde APK compilada; proyecto Kotlin original pendiente. Su clasificación y puente se revisaron en Smali; flujos actuales pendientes. |
 
 ## Familia AXEL
 
