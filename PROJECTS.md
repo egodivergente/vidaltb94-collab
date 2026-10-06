@@ -48,4 +48,4 @@ En WAV, los recortes recuperados conservan exactamente las muestras seleccionada
 
 [Más aplicaciones](CATALOG.md) · [Estado de todas las entradas revisadas](REVIEW.md)
 
-Mantengo privadas las fuentes de la mayoría de estos proyectos. CineVault 48 tiene un prototipo con código público.
+Mantengo privadas las fuentes de la mayoría de estos proyectos. Tienen código público [AXEL Editor de vídeo](https://github.com/egodivergente/corte), [NutriShift](https://github.com/egodivergente/nutrishift) y [CineVault 48](https://github.com/egodivergente/CineVault48).
