@@ -1,60 +1,67 @@
-# Evidencia y límites de los proyectos
+# Qué he comprobado
 
-Revisión del **6 de octubre de 2026**. Se compararon fuentes de las 35 entradas Android y 10 ediciones web/servicios; la cobertura funcional actual es parcial. La [matriz individual](REVIEW.md) distingue PASS concreto, parcial, fallo reproducido, bloqueado y no probado. Estos reconocimientos son editoriales por especialidad; no son premios externos ni una clasificación global de todas las apps funcionando.
+Actualizado el **6 de octubre de 2026**. He revisado fuentes de 35 entradas Android y 10 ediciones web/servicios. He probado flujos concretos de 10 aplicaciones en el Pixel; la [tabla individual](REVIEW.md) muestra qué funciona, qué falla y qué sigue pendiente.
 
 ## AXEL
 
-**Fuente:** puentes Codex CLI/Grok/AGY, streaming, cancelación, trabajos y servicios de archivos/ADB. Búsqueda por nombre y tamaño no acredita reconocer personas en fotografías. Rutas declaradas de OCR, transcripción y generación requieren sus dependencias y permisos.
+Revisé los puentes Codex CLI/Grok/AGY, streaming, cancelación, trabajos y servicios de archivos/ADB. Consulté servicios del S25: health respondió 200, una ruta esperada de capacidades respondió 404 y una consulta protegida respondió 401 sin credenciales. Los valores de capacidades declarados no demuestran su ejecución.
 
-**Actual:** se consultaron servicios del S25 sin tocar su pantalla. Health respondió 200; una ruta esperada de capacidades respondió 404. Un servicio de capacidades respondió, pero sus valores declarados no demuestran ejecución; la consulta protegida respondió 401 sin credenciales. Hay que reconciliar el servicio en ejecución con la fuente antes de afirmar funcionamiento completo. Play Protect rechazó la copia Native en Pixel; no se eludió la comprobación.
-
-**Pendiente:** comprobar conversación, enrutamiento a proveedor y herramienta con resultado verificable. No se hicieron generaciones de pago. Native, WebView, Portable y AXEL AI se conservan separados.
+Me falta reconciliar el servicio activo con las fuentes y repetir conversación → proveedor → herramienta → resultado. Play Protect rechazó la copia Native en el Pixel. No hice generaciones de pago. La búsqueda de archivos por nombre y tamaño tampoco acredita reconocimiento de personas en fotos.
 
 ## AXEL Editor de vídeo
 
-**Fuente:** modelo temporal, timeline, ripple, undo, almacenamiento atómico, keyframes y grafo Media3 de composición compartido. La comparación estática anterior registró paquete, versión, certificado documentado y 153 clases de producción coincidentes; no demuestra identidad binaria.
+**Comprobado en Pixel con el APK del S25 anterior al cambio de nombre:** crear proyecto, importar vídeo con audio, exportar H.264 720p/30 fps mediante SAF, recuperar y decodificar el archivo completo. Resultado: seis segundos de vídeo, 180 fotogramas y audio con el tono de 440 Hz conservado. El contenedor dura 6,03 s por el audio/codificación.
 
-**Actual:** se copió el APK instalado en S25, se verificó SHA-256 y se instaló en un Pixel sin este paquete. Se creó un proyecto y abrió el editor con pistas V1/V2/A1/A2. Importar, editar y exportar no se han repetido en esta sesión. El nuevo nombre elegido por el autor se aplica a las fuentes y la presentación; el APK probado conserva su nombre anterior, Corte.
+También comprobé duplicación de la pareja vídeo/audio y deshacer leyendo el proyecto guardado: dos parejas a 0 y 6 s, y una pareja después de deshacer.
 
-**Histórico:** ARCHITECTURE.md documenta 83 pruebas JVM y 20 instrumentadas, además de medidas de exportación. No se reejecutaron. Proxies, HDR, curvas de velocidad y algunos controles de procesamiento siguen pendientes. Una función no recibe PASS por aparecer en el timeline.
+- SHA-256 de entrada: `0185fbc25c0e1bb4084ed3e785d60c517fe7a18edf2a881ec83ae490a08b1bc8`.
+- SHA-256 de exportación: `938cba510bf0aff8c33356f7e85140e0e3ca16da12c95c98a89bac580220a01c`.
+
+La fuente de prueba no declara matriz de color y la exportación declara BT.709. Los tres fotogramas muestreados coinciden al interpretar ambos explícitamente como BT.709; no he validado toda la gestión de color ni otros reproductores.
+
+Conservo como históricas las 83 pruebas JVM y 20 instrumentadas documentadas. No las reejecuté. Ripple, keyframes, transiciones, otros formatos y funciones avanzadas mantienen validaciones pendientes. El nuevo nombre está en las fuentes; el APK probado todavía se presenta como Corte.
 
 ## ALEXIA
 
-**Fuente:** Room, SAF, DocumentsProvider y recuperación de escrituras. **Actual:** apertura, proyecto y filtro de tipo en Pixel, sin alterar originales. Pixel tenía versionCode 63; S25, versionCode 68. No se presenta una prueba del Pixel como validación del APK del S25.
+Comprobé apertura, proyecto y filtro de tipo sin alterar originales. El Pixel usa versionCode 63 y el S25 tenía versionCode 68: no son la misma versión.
 
-**Histórico:** informe de 63 pruebas unitarias y validación v68 de importación, hash, idempotencia, conservación del original y proveedor de documentos. Son evidencia previa, no resultados repetidos hoy. Importación y acceso entre aplicaciones actuales pendientes.
+Conservo el informe anterior de 63 pruebas unitarias y la validación v68 de importación, hash, idempotencia y proveedor de documentos. Importación e interoperabilidad de las versiones actuales siguen pendientes.
 
 ## NEXUS
 
-**Actual Android:** catálogo guardado visible y aviso de recuperación de conexión. Esto prueba navegación del catálogo local, no disponibilidad de los modelos ni generación nueva.
+Android mostró catálogo guardado y recuperación de conexión. Eso valida navegación local, no la disponibilidad actual de los proveedores.
 
-**Revisión separada de escritorio:** captura real y verificaciones de navegación, conservación de prompt, importación local y rechazo de importaciones inválidas con datos de laboratorio. El informe de esa revisión registró 838 modelos, 85 trabajos y 84 resultados; son datos del estado revisado. No se hicieron llamadas de pago y el asistente figuró como no cargado durante esa comprobación.
+La revisión separada de escritorio incluye navegación, conservación de prompt, importación local y rechazo de entradas inválidas con datos de laboratorio. Su informe registra 838 modelos, 85 trabajos y 84 resultados del estado revisado; no hice llamadas de pago en esta auditoría.
 
 ## NutriShift
 
-**Fuente:** menú contextual, turnos, despensa, lotes, caducidad y consumo reversible. **Actual:** APK copiado y verificado; flujo principal no repetido.
+Comprobé menú semanal, avance tras marcar una comida, alta de un producto sintético en despensa y objetivo manual de 2100 kcal visible como activo. Denegué acceso al calendario privado en la copia de prueba.
 
-**Histórico:** XML con 42 pruebas JVM sin errores/fallos e informe de 28 pruebas Android en S25. La revisión visual completa de la 2.3 estaba pendiente en esos documentos. Las estimaciones nutricionales no son validación clínica.
+Me falta repetir consumo/reversión de existencias, persistencia del objetivo y turnos con calendario sintético. Las 42 pruebas JVM y 28 Android documentadas son anteriores. Las estimaciones nutricionales no son validación clínica.
 
 ## AudioTrim
 
-**PASS actual limitado al WAV:** fixture sintético de 4 s, PCM mono de 16 bits y 48 kHz. Abrir → seleccionar → recortar → guardar por SAF → recuperar archivo. Exportación de 143.760 muestras, duración 2,995 s, PCM idéntico al tramo original.
+**WAV convencional:** entrada de cuatro segundos, PCM mono de 16 bits y 48 kHz. El recorte recuperado tiene 143.760 muestras, dura 2,995 s y coincide exactamente con el tramo original.
 
-- SHA-256 original: `45476dcdc32bf0aae2841292ee9b6d19b334ced9446d92544443716da600a28a`.
-- SHA-256 exportación: `7cfb2c9095d1ed175cffc4de5e41ab3cad6d204d88bcc2513c1540dc0869d7fa`.
+- Entrada: `45476dcdc32bf0aae2841292ee9b6d19b334ced9446d92544443716da600a28a`.
+- Salida: `7cfb2c9095d1ed175cffc4de5e41ab3cad6d204d88bcc2513c1540dc0869d7fa`.
 
-MP3, M4A y extracción de vídeo no validados en esta sesión. Recortar Audio es otra app y no hereda este PASS.
+**WAV con chunk JUNK adicional:** reconocido y recortado; 147.168 muestras, 3,066 s y PCM exacto. Salida: `60ca29fba765959175acbe5ccf101701faf4b12af1cc6b8d1b7ee9bff9f39f74`.
 
-## Hallazgos en candidatas
+MP3, M4A y extracción de vídeo siguen pendientes en esta revisión.
 
-- **AXEL Task:** la petición de un hueco de dos horas devolvió opciones de 30 minutos. Se reprodujo en el chat de la app. La instalación nueva contiene datos personales predefinidos, excluidos de capturas públicas.
-- **AXEL Drobe:** tipo y color de una prenda fueron reconocidos, pero el nombre quedó en su primera letra. No se completó el flujo de conjuntos. Pixel API 37 mostró una advertencia de alineación de librerías de 16 KB.
-- **ClipTree:** se creó y mostró un fragmento sintético en su carpeta. Copia al portapapeles y persistencia tras reiniciar pendientes. Su repositorio JSON no acredita un gestor seguro de contraseñas.
-- **DisAster Web:** operaciones sobre registros de ejemplo, separadas de DisAster Android. No se atribuye gestión real del almacenamiento del teléfono a esa demo.
-- **PhotoLayers:** ampliación por interpolación y enfoque en el código revisado; no superresolución neuronal.
+## Otros resultados
 
-## Alcance y límites
+- **AXEL Task:** pedir un hueco de dos horas devuelve opciones de 30 minutos. La instalación nueva también contiene datos personales predefinidos que debo retirar antes de distribuirla.
+- **AXEL Drobe:** guardar dos prendas, proponer un conjunto, vestirlo, separar colada y devolver prendas lavadas a disponibles funcionó. Corregí manualmente los nombres para continuar: el autocompletado deja solo la primera letra. El Pixel API 37 también advierte de alineación de librerías de 16 KB.
+- **ClipTree:** creé un fragmento, comprobé su escritura JSON, lo copié y pegué en la búsqueda: un resultado coincidente. Reinicio y overlay pendientes. El almacenamiento revisado es local y sin cifrado.
+- **Despeja:** capturé una nota, se clasificó en Comprar y la marqué como despejada. Deshacer, persistencia y planificación pendientes.
+- **Recortar Audio:** el WAV convencional conserva el PCM tras recortarlo, pero el tipo MIME y la extensión M4A no corresponden al contenido WAV. Un WAV válido con chunk JUNK adicional falla con «divide by zero» y deja un archivo vacío.
+- **DisAster Web:** trabaja con registros de ejemplo; mantengo separada la evaluación de DisAster Android sobre archivos reales.
+- **PhotoLayers:** el código revisado amplía por interpolación y enfoque; no implementa superresolución neuronal.
 
-El Pixel quedó reservado después para otra compilación y pruebas de NEXUS; se respetó esa reserva y no se siguió operando su UI. Algunas funciones necesitan TV, robot, servicios autenticados o un entorno profesional que no se validaron aquí. Los tiempos de apertura y muestras aisladas de memoria no sirven para clasificar rendimiento sostenido.
+## Alcance
 
-La documentación conserva pendientes por app. Se mantienen privadas fuentes, credenciales, información profesional, datos personales, capturas y XML sin revisar. No se eliminó ningún original, se borraron datos de aplicaciones o se eludió Play Protect.
+Algunas pruebas necesitan TV, robot, servicios autenticados o un entorno profesional. Mantengo esos pendientes en la tabla. No clasifico rendimiento sostenido con una sola apertura o una muestra de memoria.
+
+Conservo privadas las fuentes, credenciales, datos personales y capturas sin revisar. Las pruebas de escritura aquí descritas usan copias de auditoría y contenido sintético.
