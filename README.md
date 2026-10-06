@@ -1,35 +1,18 @@
-<p><strong>EGODIVERGENTE</strong> · DESARROLLO Y DISEÑO DE PRODUCTO</p>
+# Egodivergente
 
-# Aplicaciones para crear y organizar.
+Hago aplicaciones para Android y herramientas locales. Trabajo sobre todo con vídeo, archivos y agentes de IA; también tengo proyectos para organizar turnos, comidas y tareas.
 
-Desarrollo productos Android y herramientas de escritorio a partir de necesidades concretas: crear con IA, editar vídeo, organizar archivos y planificar el día a día.
+## Proyectos
 
-**Android nativo · Multimedia · IA aplicada · Herramientas locales**
+- **[AXEL](PROJECTS.md#axel)** — Codex, Grok y Antigravity desde el teléfono, con archivos y herramientas Android.
+- **[AXEL Editor de vídeo](PROJECTS.md#axel-editor-de-vídeo)** — Edición multipista con vídeo y audio vinculados, timeline y exportación.
+- **[ALEXIA](PROJECTS.md#alexia)** — Biblioteca de imágenes, vídeos y audio por proyectos, accesible desde otras apps.
+- **[NEXUS](PROJECTS.md#nexus)** — Modelos de imagen, vídeo y audio, opciones de generación y resultados en una misma app.
+- **[NutriShift](PROJECTS.md#nutrishift)** — Menús que tienen en cuenta los turnos, la despensa y las raciones preparadas.
+- **[AudioTrim](PROJECTS.md#audiotrim)** — Recortes de audio locales con tratamiento específico para cada formato.
 
-## Proyectos destacados por especialidad
+También trabajo en **AXEL Drobe**, **AXEL Task**, **Despeja**, **ClipTree** y herramientas para TV. El [catálogo](CATALOG.md) recoge el resto.
 
-| Proyecto | Qué aporta | Especialidad |
-| --- | --- | --- |
-| **AXEL** | Agentes Codex, Grok y Antigravity/AGY con archivos, herramientas y acceso al entorno Android. | [Integración de agentes](PROJECTS.md#axel) |
-| **AXEL Editor de vídeo** | Timeline multipista, edición no destructiva, keyframes y composición multimedia. | [Ingeniería multimedia](PROJECTS.md#axel-editor-de-vídeo) |
-| **ALEXIA** | Biblioteca por proyectos conectada con archivos y selectores de Android. | [Integridad e interoperabilidad](PROJECTS.md#alexia) |
-| **NEXUS** | Modelos, formularios, referencias, trabajos y resultados en Android y escritorio. | [Producto creativo](PROJECTS.md#nexus) |
-| **NutriShift** | Turnos, menús, despensa, raciones y compra. | [Utilidad cotidiana](PROJECTS.md#nutrishift) |
-| **AudioTrim** | Recorte de audio local con un flujo WAV verificado muestra a muestra. | [Precisión en una herramienta local](PROJECTS.md#audiotrim) |
+Kotlin · Compose · Room · Media3 · Python · TypeScript
 
-Aquí reúno mis proyectos por lo que aportan. En cada ficha cuento qué he implementado, qué he comprobado y qué queda pendiente. [Evidencia](VALIDATION.md) · [Evaluación de todas las apps](REVIEW.md).
-
-## Más proyectos
-
-**AXEL Task** · agenda y tareas. **AXEL Drobe** · armario y conjuntos. **ClipTree** · fragmentos y portapapeles. **Despeja** · ideas y pendientes. **AXEL TV** · interacción entre televisión y móvil.
-
-[Catálogo completo](CATALOG.md) · [Fichas de producto](PROJECTS.md)
-
-## Cómo trabajo
-
-- Convertir problemas cotidianos en flujos concretos.
-- Cuidar archivos, permisos y continuidad de los datos.
-- Usar IA durante el desarrollo, revisar código y comprobar resultados.
-- Conservar fuentes versionadas y distinguir lo implementado de lo probado.
-
-Kotlin · Jetpack Compose · Material 3 · Room / SQLite · WorkManager · Media3 · Python · TypeScript · Git
+[Proyectos en detalle](PROJECTS.md) · [Pruebas y pendientes](VALIDATION.md)

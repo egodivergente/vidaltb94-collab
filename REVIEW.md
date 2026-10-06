@@ -1,30 +1,8 @@
-# Evaluación de aplicaciones · 6 de octubre de 2026
+# Estado por aplicación
 
-He revisado las **35 entradas Android identificadas**, incluidos complementos y prototipos, y **10 ediciones web o de servicios**. He localizado las 57 copias de fuente de este inventario. Tener fuente, instalar un APK y completar su flujo principal son comprobaciones distintas.
+La tabla reúne la revisión de fuentes y las pruebas concretas realizadas. **Alta**, **Media** y **Baja** describen la complejidad de la implementación, no el tiempo que llevó desarrollarla. Los fallos reproducidos se indican aparte de las funciones sin probar.
 
-**Cobertura funcional actual parcial:** he probado flujos concretos en ALEXIA, NEXUS, AXEL Editor de vídeo (APK identificado como Corte), AXELTask, AXELDrobe, AudioTrim, ClipTree, Despeja, Recortar Audio y NutriShift en Pixel físico API 37. También he consultado servicios AXEL del S25 sin operar su pantalla. Uso PASS para el flujo concreto comprobado. Las pruebas históricas se mantienen identificadas como históricas. Todavía no tengo pruebas completas para ordenar todas las apps por funcionamiento.
-
-## Cómo se valora
-
-- **Dificultad técnica:** problemas propios resueltos, persistencia e integridad, concurrencia, formatos, permisos, integración entre componentes y recuperación ante errores. Cantidad de archivos, librerías empaquetadas y uso de un SDK no equivalen a ingeniería propia.
-- **Utilidad y singularidad:** problema concreto, ahorro de pasos y relación con el resto del ecosistema. Un acompañante se valora dentro de su conjunto.
-- **Funcionamiento:** entrada real, acción, resultado comprobable y fallos reproducidos. Una pantalla que abre, una capability declarada o un servicio health no acreditan todo el producto.
-- **Experiencia y madurez:** claridad de flujos, estado de conexión, permisos, datos de ejemplo y límites de distribución. La opinión visual no sustituye exportaciones o integridad.
-
-Valoro la dificultad por los problemas implementados; no he medido las horas de desarrollo. Las limitaciones de prueba no implican que la app falle. La evaluación funcional seguirá pendiente donde falten dispositivo objetivo, puente, permisos acotados o ejecución del flujo.
-
-## Proyectos que destaco por su aportación
-
-| Área | Proyecto | Motivo y alcance |
-| --- | --- | --- |
-| Integración de agentes | **AXEL** | Puentes Codex/Grok/AGY, trabajos y herramientas Android/archivos. Arquitectura revisada; el servicio activo necesita reconciliación y prueba completa. |
-| Ingeniería multimedia | **AXEL Editor de vídeo** | Modelo temporal, edición no destructiva y grafo de composición compartido. Importación, exportación básica y duplicar/deshacer comprobados en el Pixel. |
-| Integridad e interoperabilidad | **ALEXIA** | Room, SAF y DocumentsProvider con recuperación de escrituras. Apertura/filtro actuales e integridad histórica documentada. |
-| Producto creativo | **NEXUS** | Catálogo, formularios, trabajos y biblioteca en Android/escritorio. Catálogo local observado; disponibilidad de proveedores por comprobar. |
-| Utilidad cotidiana | **NutriShift** | Turnos, despensa, lotes, compra y consumo reversible. Plan semanal, despensa y objetivo manual observados; consumo reversible y calendario por verificar. |
-| Precisión en un flujo local | **AudioTrim** | Recorte WAV real con PCM idéntico al tramo original, recuperado y verificado. Prueba limitada a ese formato y flujo. |
-
-Destaco cada proyecto por lo que aporta y mantengo sus pruebas y pendientes a la vista.
+Los recorridos y resultados de los proyectos principales están en [Pruebas y pendientes](VALIDATION.md). Esta lista incluye acompañantes, prototipos y distintas ediciones; no es una clasificación de productos terminados.
 
 ## Todas las entradas Android
 
@@ -80,35 +58,3 @@ Destaco cada proyecto por lo que aporta y mantengo sus pruebas y pendientes a la
 | **farmatools-ronda** · Extensión que prepara una hoja de turno | Extracción del DOM de un portal concreto y consolidación; depende del entorno real. | Fuente revisada; integración con portal laboral no probada en esta auditoría. |
 | **noelia-vidal-pwa** · PWA personal de recuerdos y medios | Carga local, IndexedDB y service worker; código y contenido personal deben distinguirse. | Fuente revisada; no se publicó material personal ni se probó despliegue actual. |
 | **noelia-vidal-claude** · Otra edición del proyecto personal de recuerdos | UI React/Next y persistencia según edición; relación con la PWA por conservar. | Fuente revisada; no se probó despliegue actual ni se fusionaron variantes. |
-
-## Resultados que cambian la presentación
-
-Encontré dos pendientes en AXEL Task: el chat devuelve 30 minutos cuando pido dos horas y la instalación nueva incluye datos personales predefinidos. Mantengo esos valores fuera de esta página. AXELDrobe reconoce tipo y color, pero su autocompletado deja el nombre en una letra. El ciclo de conjuntos y colada de AXEL Drobe sí funcionó después de corregir manualmente los nombres; el fallo de autocompletado sigue pendiente.
-
-DisAster Android y DisAster Web son ediciones distintas. La web cambia registros de demostración; no acredita operaciones sobre archivos reales. PhotoLayers implementa ampliación por interpolación y enfoque, no superresolución neuronal. AXEL Stream sirve medios/archivos; no se ha encontrado una implementación de captura de pantalla en la edición revisada.
-
-En AXEL Console valoro el parser ANSI, el terminal y el cliente autenticado; me falta probar una sesión completa. Despeja conserva clasificación de ideas/pendientes y planes; no es un limpiador de archivos. ClipTree es un organizador local de fragmentos; su JSON no acredita una bóveda segura de contraseñas.
-
-El rechazo de algunos APKs antiguos por Play Protect en Pixel API 37 es un límite de esta sesión, no una prueba de fallo en su Android TV objetivo. El rendimiento no se clasifica con una sola apertura ni una captura aislada de memoria.
-
-## Resultados de multimedia comprobados
-
-Fixture sintético de 4 segundos, 48 kHz, mono PCM de 16 bits. Se abrió en AudioTrim, se desplazó el inicio, se guardó por el selector Android y se recuperó el archivo exportado. El resultado tiene 143.760 muestras y dura 2,995 segundos; sus bytes PCM coinciden exactamente con la selección del original.
-
-- SHA-256 del WAV original: `45476dcdc32bf0aae2841292ee9b6d19b334ced9446d92544443716da600a28a`.
-- SHA-256 del WAV exportado: `7cfb2c9095d1ed175cffc4de5e41ab3cad6d204d88bcc2513c1540dc0869d7fa`.
-
-No se repitieron MP3, M4A ni extracción de vídeo. Las capturas y registros con información privada no forman parte de esta página.
-
-## Nombres y coherencia
-
-AXEL es el producto de agentes y sus ediciones se identifican por separado: Android/WebView, Native, archivo Portable y AXEL AI con servidor. AXEL Task y AXEL Drobe se escriben de forma consistente en la presentación. AudioTrim y Recortar Audio siguen siendo apps distintas. Elegí **AXEL Editor de vídeo** para el proyecto antes llamado Corte. El nombre del lanzador y el encabezado usan un recurso único en las fuentes; el paquete y el repositorio Corte conservan su identidad. La actualización del APK instalado todavía no se ha realizado.
-
-AXEL Control, el selector de compilaciones, Salón y las reservas históricas son infraestructura o inventario sin suficiente fuente funcional en este lote; no compiten como apps terminadas. No se eliminaron repositorios ni se publicaron fuentes privadas.
-
-
-He exportado un clip sintético de seis segundos en AXEL Editor de vídeo: H.264, 1280 × 720, 30 fps y 180 fotogramas. El archivo completo se decodifica y conserva el tono de audio de 440 Hz. También he comprobado duplicación y deshacer de vídeo/audio vinculados leyendo el proyecto guardado. Esta prueba usa el APK anterior al cambio de nombre y no cubre todas las funciones del editor.
-
-Con el mismo WAV válido que contiene un chunk JUNK adicional, AudioTrim entrega muestras exactas y Recortar Audio falla con «divide by zero», dejando un archivo vacío. En el WAV convencional, Recortar Audio sí conserva el PCM, pero su etiqueta MIME y extensión de salida no corresponden al contenido WAV.
-
-He comprobado copia, búsqueda y escritura del fragmento de prueba en ClipTree; captura, clasificación y completar en Despeja; y el ciclo de conjunto, uso y colada en AXEL Drobe. En NutriShift he visto planificación semanal, avance al marcar comida, alta de un producto y objetivo manual de 2100 kcal. Cada resultado mantiene su alcance concreto en la tabla.
