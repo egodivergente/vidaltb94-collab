@@ -69,4 +69,4 @@ CineVault48, AXEL Control y el selector de compilaciones conservan su valor como
 
 ---
 
-La selección es editorial, basada en la evidencia accesible, y no una puntuación de rendimiento de todo el catálogo. Los repositorios privados conservan su acceso restringido.
+La selección es editorial y provisional, basada en la evidencia accesible. No es una clasificación completa: AXELTask, AXELDROBE y otras apps todavía requieren localizar y evaluar sus fuentes. [Consultar el catálogo completo y sus pendientes](CATALOG.md). Los repositorios privados conservan su acceso restringido.
