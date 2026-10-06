@@ -4,7 +4,7 @@ El catálogo organiza productos, variantes y herramientas de apoyo. Los reposito
 
 ## Productos destacados
 
-[NEXUS · NutriShift · Corte · ALEXIA](PROJECTS.md). Consultar [su alcance y evidencia](VALIDATION.md).
+[AXEL · NEXUS · Corte · ALEXIA · NutriShift](PROJECTS.md). Consultar [su alcance y evidencia](VALIDATION.md).
 
 ## Creación, archivos y multimedia
 
@@ -30,7 +30,7 @@ El catálogo organiza productos, variantes y herramientas de apoyo. Los reposito
 | **AXEL TV** | Herramientas de televisión y acompañantes móviles. |
 | **AXEL Browse** | Navegador TV con AXEL Link como acompañante móvil. |
 | **AXEL Stream / AXEL Media TV** | Proyectos de reproducción multimedia conservados por separado. |
-| **AXEL AI / AXEL Native / AXEL Android** | Variantes del asistente y sus componentes locales; no se presentan como una sola edición reconciliada. |
+| **AXEL AI / AXEL Native / AXEL Android** | App y variantes del sistema de agentes; [AXEL tiene ficha destacada](PROJECTS.md#axel). Las ediciones no se presentan como una sola instalación reconciliada. |
 | **AXEL OSINT** | Herramienta local de investigación de fuentes abiertas. |
 | **AxShell** | Editor de secuencias de acciones y comandos. |
 | **AXEL Work** | Organización de trabajo clínico; fuente recuperada, sin validación clínica ni funcional actual. |
@@ -50,7 +50,7 @@ Las fuentes de AXEL Task y AXEL Drobe están recuperadas. AXEL Android conserva 
 
 ## Infraestructura y componentes locales
 
-AXEL Control, Dr. Axel, AXEL Console, AKI, Aki Chat, el lanzador Antigravity personal, Dreame MCP, Salón y el selector de compilaciones son herramientas de apoyo. No se confunden con los cuatro productos destacados. Dreame conserva la atribución de su protocolo; el lanzador es independiente de Google.
+AXEL Control, Dr. Axel, AXEL Console, AKI, Aki Chat, el lanzador Antigravity personal, Dreame MCP, Salón y el selector de compilaciones son herramientas de apoyo. No se confunden con los cinco productos destacados. Dreame conserva la atribución de su protocolo; el lanzador es independiente de Google.
 
 AXEL Portable conserva un archivo de **Codex UI**, una interfaz web local del ejecutor Codex. No es un APK Android. AXEL Link, Mando AXEL y AXEL Music TV son aplicaciones complementarias de sus familias.
 

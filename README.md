@@ -10,10 +10,11 @@ Desarrollo productos Android y herramientas de escritorio a partir de necesidade
 
 | Proyecto | Problema que resuelve | Explorar |
 | :--- | :--- | :--- |
-| **01 · NEXUS** | Reúne modelos de IA, parámetros, referencias y resultados en un estudio para Android y escritorio. | [Ficha](PROJECTS.md#nexus) |
-| **02 · NutriShift** | Conecta los turnos con las comidas, las raciones, la despensa y la compra. | [Ficha](PROJECTS.md#nutrishift) |
+| **01 · AXEL** | Conecta agentes de Codex, Grok y Antigravity/AGY con archivos, herramientas locales y acciones sobre Android. | [Ficha](PROJECTS.md#axel) |
+| **02 · NEXUS** | Reúne modelos de IA, parámetros, referencias y resultados en un estudio para Android y escritorio. | [Ficha](PROJECTS.md#nexus) |
 | **03 · Corte** | Lleva la edición de vídeo multipista, el audio y la exportación a una aplicación Android local. | [Ficha](PROJECTS.md#corte) |
 | **04 · ALEXIA** | Organiza material creativo por proyectos y lo conecta con los archivos y selectores de Android. | [Ficha](PROJECTS.md#alexia) |
+| **05 · NutriShift** | Conecta los turnos con las comidas, las raciones, la despensa y la compra. | [Ficha](PROJECTS.md#nutrishift) |
 
 Las fichas explican el alcance implementado y el estado de cada producto. [Evidencia y límites](VALIDATION.md).
 

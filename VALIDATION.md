@@ -105,3 +105,13 @@ La selección es editorial y provisional, basada en la evidencia accesible. No e
 La auditoría de organización del 6 de octubre revisó metadatos, ramas, portadas, documentos de continuidad y la presentación visible de los 49 repositorios de la cuenta. No repitió las pruebas de todas las apps ni abrió aplicaciones en el móvil principal. La selección principal combina propósito de producto, profundidad implementada y evidencia accesible; AXEL Task y AXEL Drobe quedan como candidatas para una comparación actual de su experiencia.
 
 La captura añadida de NEXUS corresponde a la interfaz real del escritorio ejecutada con datos de laboratorio, sin conexión ni generación de pago. Las imágenes y el estado de ejemplo no acreditan una nueva generación. No se añadieron imágenes imaginadas de las otras aplicaciones.
+
+## AXEL
+
+La revisión de fuentes del 6 de octubre identificó en la edición Native el enrutamiento real a Codex CLI, Grok y Antigravity/AGY, además de streaming, cancelación y estados de proveedor. El código MCP implementa listado, búsqueda por nombre y tamaño, inspección y planes de copia/movimiento de archivos; implementa también consultas ADB, captura, inspección de UI, logs y apertura explícita de aplicaciones.
+
+Las rutas multimedia incluyen OCR, transcripción, adjuntos, carga de referencias y generación mediante AtlasCloud, además de flujos Android de intercambio y automatización. La búsqueda de archivos comprobada en esa capa no acredita reconocimiento semántico de personas en fotos.
+
+Esta evidencia es una lectura del código recuperado. No se ejecutaron aquí órdenes sobre el teléfono ni generaciones de pago; no se acredita disponibilidad actual de todos los puentes. Algunas capacidades se anuncian en un registro y usan un flujo dedicado: su declaración no basta para dar por probada la cadena completa. La experiencia histórica relatada por el autor no sustituye esa comprobación de la instalación actual.
+
+La edición Native y la WebView antigua `ai.axel.app` tienen identidades diferentes. Se presentan bajo el producto AXEL, manteniendo la separación de sus fuentes y versiones. El README Native anterior describía solo su primera vertical Gemini y no representaba todo el alcance existente en sus archivos.
