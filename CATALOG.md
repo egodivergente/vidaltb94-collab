@@ -1,60 +1,70 @@
-# Catálogo del ecosistema
+# Catálogo de productos
 
-La portada muestra cuatro proyectos seleccionados. Este catálogo conserva el resto del ecosistema, incluidas las aplicaciones cuyas fuentes todavía están pendientes de localizar o consolidar.
+El catálogo organiza productos, variantes y herramientas de apoyo. Los repositorios de código privado se presentan aquí mediante descripciones públicas; sus archivos y datos internos conservan el acceso restringido.
 
-**La selección del portafolio es provisional mientras se completa la evaluación de las apps pendientes.** Ausencia de una app en la portada no significa ausencia de código ni menor calidad.
+## Productos destacados
 
-## Proyectos seleccionados
+[NEXUS · NutriShift · Corte · ALEXIA](PROJECTS.md). Consultar [su alcance y evidencia](VALIDATION.md).
 
-[NEXUS, NutriShift, Corte y ALEXIA: alcance, evidencia y límites](PROJECTS.md).
+## Creación, archivos y multimedia
 
-## Fuentes registradas en repositorios
+| Producto | Propósito | Estado documental |
+| :--- | :--- | :--- |
+| **CreatorVault** | Bóveda y organización de material creativo por sesiones y proyectos. | Fuentes recuperadas; revisión actual pendiente. |
+| **CineVault 48** | Galería temporal por proyectos con retención y simulación. | [Prototipo con código público](https://github.com/vidaltb94-collab/CineVault48). Conserva una copia privada separada. |
+| **DisAster** | Organización de archivos. | App Android y variantes web separadas. La edición Android instalada 3.7.3 conserva una reconstrucción compilable. |
+| **Keyframe Sorter** | Herramienta Android de organización de imágenes y keyframes. | App distinta de DisAster, aunque sus archivos compartan repositorio. |
+| **AudioTrim** | Apertura de audio o vídeo y recorte de audio. | Fuentes recuperadas; app distinta de Recortar Audio. |
+| **Recortar Audio** | Recorte con reproducción, forma de onda y exportación. | Fuentes recuperadas; validación actual pendiente. |
+| **PhotoLayers Studio** | Proyecto de edición de imágenes por capas. | Fuentes recuperadas; experiencia actual pendiente. |
+| **PromptClip** | Detección y copia de prompts visibles mediante accesibilidad. | Fuentes recuperadas; los permisos y las versiones tienen documentación propia. |
+| **Despeja** | Aplicación Android conservada desde su instalación. | Reconstrucción desde APK compilada; proyecto Kotlin original pendiente. Su propósito y flujos actuales requieren evaluación. |
 
-El índice interno documenta las ramas y la procedencia de las fuentes privadas. Recuperar una copia no acredita que sea la última versión ni que todas sus funciones estén validadas.
+## Familia AXEL
 
-| Área | Proyectos |
+| Producto | Propósito |
 | :--- | :--- |
-| Creación y multimedia | ALEXIA · NEXUS · CineVault · CineVault48 · CreatorVault · Clasificador de fotos / variantes Android de DisAster · Corte · AudioTrim · Recortar Audio · PhotoLayers Studio · PromptClip · Keyframe Sorter · Despeja |
-| Familia AXEL | AXEL AI · AXEL Browse · AXEL Music · AXEL Native · AXEL OSINT · AXEL Portable · AXEL TV · AXELTask · AXELDROBE · AXEL Stream · AXEL Media TV · AxShell · AXEL Control · AXEL Link · Mando AXEL · AxelMusic TV |
-| Herramientas especializadas | Amazon Medical Portal · Derivación SNS · DerivaMAD4 · FarmaTools Ronda · AXELWORK |
-| Planificación y organización | NutriShift · Cliptree |
-| Web y variantes | DisAster web · DisAster (repositorio anterior) · Noelia y Vidal, variantes Claude y PWA |
-| Dispositivos y asistentes locales | Dreame · S25 Manager · Dr. Axel · Aki Chat · AKI · AXEL Console · Lanzador Antigravity personal |
+| **AXEL Task** | Agenda, tareas y conflictos de horario. |
+| **AXEL Drobe** | Armario, conjuntos, planificación y lavandería. |
+| **AXEL Music** | Biblioteca y reproducción de audio local en móvil y TV. |
+| **AXEL TV** | Herramientas de televisión y acompañantes móviles. |
+| **AXEL Browse** | Navegador TV con AXEL Link como acompañante móvil. |
+| **AXEL Stream / AXEL Media TV** | Proyectos de reproducción multimedia conservados por separado. |
+| **AXEL AI / AXEL Native / AXEL Android** | Variantes del asistente y sus componentes locales; no se presentan como una sola edición reconciliada. |
+| **AXEL OSINT** | Herramienta local de investigación de fuentes abiertas. |
+| **AxShell** | Editor de secuencias de acciones y comandos. |
+| **AXEL Work** | Organización de trabajo clínico; fuente recuperada, sin validación clínica ni funcional actual. |
 
-Las variantes de un producto y sus repositorios históricos no se cuentan como apps distintas. DisAster Android conserva las ramas históricas y una reconstrucción completa del APK instalado 3.7.3. Esa reconstrucción no sustituye las fuentes nativas originales que siguen pendientes de localizar.
+Las fuentes de AXEL Task y AXEL Drobe están recuperadas. AXEL Android conserva Java dentro de un árbol con configuración mezclada de ALEXIA; queda separar y reconciliar el proyecto. [Evidencia y pendientes](VALIDATION.md#otros-proyectos).
 
-## Apps pendientes de consolidar
+## Productividad y herramientas especializadas
 
-Las fuentes de AXELTask, AXELDROBE y Cliptree se localizaron en las carpetas de trabajo de Antigravity y ya están publicadas en repositorios privados. Sus fichas están [aquí](PROJECTS.md#axeltask). La recuperación añadió también PhotoLayers Studio, Recortar Audio, AXEL Stream y AXEL Media TV. Las variantes de proyectos existentes se conservan en ramas separadas. No se han recompilado durante esta recuperación.
-
-Estos proyectos requieren completar su recuperación:
-
-| App | Pendiente |
+| Producto | Propósito |
 | :--- | :--- |
-| **Despeja** | Localizar el proyecto original; se conserva una reconstrucción de su APK. |
-| **AXEL Console** | Localizar el proyecto original; su reconstrucción desde APK compila. |
-| **DisAster Android** | Localizar las fuentes nativas originales; la edición instalada 3.7.3 se conserva reconstruida y compilable. |
-| **AXEL Android (`ai.axel.app`)** | Código Java recuperado dentro de un árbol mezclado con ALEXIA; separar y reconciliar su configuración de compilación. |
+| **ClipTree** | Fragmentos de texto en carpetas, copia al portapapeles y acceso flotante. |
+| **Amazon Medical Portal** | Portal local de módulos de documentación, inventario y trabajo. |
+| **Derivación SNS / DerivaMAD4** | Variantes de documentación de derivaciones, conservadas por separado. |
+| **FarmaTools · hoja de turno** | Extensión que prepara una hoja a partir de información ya visible; requiere comprobación profesional. |
+| **Noelia y Vidal** | Álbum web privado; variantes PWA y de fuentes para Claude. |
+| **S25 Files** | Herramientas de gestión de archivos para el S25. |
 
-## Inventario Android ampliado
+## Infraestructura y componentes locales
 
-La revisión de APK del 6 de octubre identifica **35 entradas de apps Android propias**, incluidas apps complementarias y prototipos. Las variantes de pruebas se agrupan con su app principal. Este recuento describe el archivo Android; los proyectos web y herramientas del catálogo tienen otro alcance.
+AXEL Control, Dr. Axel, AXEL Console, AKI, Aki Chat, el lanzador Antigravity personal, Dreame MCP, Salón y el selector de compilaciones son herramientas de apoyo. No se confunden con los cuatro productos destacados. Dreame conserva la atribución de su protocolo; el lanzador es independiente de Google.
 
-Además de las apps anteriores, se localizaron **AXEL Console, AXELWORK, Dr. Axel, Aki Chat y un lanzador Antigravity personal**. Sus APK confirman su existencia, pero su funcionamiento actual y su inclusión en la selección principal están pendientes de evaluar. Las fuentes de AXELWORK, Dr. Axel, Aki Chat, AKI y el lanzador ya están publicadas en repositorios privados. Las 8 clases de AKI aparecen en su APK instalado; su carpeta original no incluye un proyecto Gradle completo. AXEL Android `ai.axel.app` conserva sus fuentes Java dentro de un árbol con configuración ALEXIA, archivado sin mezclarlo con la fuente principal. AXEL Console conserva una reconstrucción de su APK que compila; su proyecto original sigue pendiente. Ninguna de estas recuperaciones acredita por sí sola una prueba funcional actual.
+AXEL Portable conserva un archivo de **Codex UI**, una interfaz web local del ejecutor Codex. No es un APK Android. AXEL Link, Mando AXEL y AXEL Music TV son aplicaciones complementarias de sus familias.
 
-**Keyframe Sorter y DisAster son apps distintas.** Keyframe Sorter figura en la recuperación base del repositorio `clasificador-fotos`; DisAster conserva otras ramas de recuperación. AXEL Link, Mando AXEL y AxelMusic TV tienen APK propios como apps complementarias.
+## Archivos y reservas históricas
 
-El registro completo de identidades, versiones y pendientes está en el [índice privado](https://github.com/vidaltb94-collab/apps-index/blob/codex/migration-20261006/APK-INVENTORY.md). La búsqueda incluye archivos antiguos y copias; no demuestra que todas las fuentes sean la última edición.
+- **Or:** archivo de un ZIP de CreatorVault; no es un producto independiente.
+- **AppOrganizer:** reserva sin código ni entregas.
+- **NEXUS-Studio:** reserva vacía; el escritorio real se conserva dentro del proyecto NEXUS.
+- **DisAster Web anterior:** revisión web conservada por separado del archivo web recuperado y de Android.
 
-## Repositorios y componentes por reconciliar
+Los tres primeros repositorios se archivan para separar reservas y copias históricas del trabajo activo, conservando su contenido.
 
-- **AppOrganizer:** repositorio sin fuentes en la revisión anterior.
-- **NEXUS-Studio:** repositorio separado sin fuentes en la revisión anterior; el escritorio de NEXUS sí figura en el proyecto NEXUS.
-- **Or:** archivo ZIP de CreatorVault, pendiente de organizar como fuente navegable.
-- **salon:** repositorio añadido después del inventario inicial, pendiente de revisión.
-- **AXEL Stream y AXEL Media TV:** fuentes recuperadas; funcionamiento actual pendiente de comprobar.
-- **Selector de compilaciones:** infraestructura de desarrollo, fuera de la selección principal de aplicaciones.
-- **apps-index:** índice interno de fuentes, variantes y pendientes.
-- **Repositorio del perfil:** presentación pública del ecosistema.
+## Alcance del inventario
 
-Última revisión: **6 de octubre de 2026**. El catálogo sigue abierto a fuentes que aparezcan en otros dispositivos o respaldos.
+La revisión del 6 de octubre identifica **35 entradas de apps Android propias**, agrupando las variantes de prueba y contando también complementos y prototipos. Los proyectos web y la infraestructura tienen otro alcance; 49 repositorios no equivalen a 49 aplicaciones terminadas.
+
+El inventario detallado de hashes, ramas y procedencia permanece privado. Este catálogo público ofrece los nombres, las relaciones y el estado de las fuentes sin dirigir al visitante a documentación restringida.

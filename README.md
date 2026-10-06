@@ -1,37 +1,33 @@
-<p align="left"><strong>EGODIVERGENTE</strong> · PORTAFOLIO</p>
+<p><strong>EGODIVERGENTE</strong> · DESARROLLO Y DISEÑO DE PRODUCTO</p>
 
-# Crear. Organizar. Simplificar.
+# Aplicaciones para crear y organizar.
 
-Diseño y desarrollo aplicaciones para convertir necesidades concretas en productos útiles: creación con IA, bibliotecas multimedia y organización cotidiana.
+Desarrollo productos Android y herramientas de escritorio a partir de necesidades concretas: crear con IA, editar vídeo, organizar archivos y planificar el día a día.
 
-**Android nativo · Productos con IA · Diseño de interfaces · Automatización**
+**Android nativo · Multimedia · IA aplicada · Herramientas locales**
 
 ## Proyectos destacados
 
-| Proyecto | Qué aporta | Explorar |
+| Proyecto | Problema que resuelve | Explorar |
 | :--- | :--- | :--- |
-| **01 · NEXUS** | Un estudio de creación con IA para Android y escritorio: modelos, parámetros, referencias y biblioteca multimedia en un mismo flujo. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nexus) |
-| **02 · NutriShift** | Planificación de comidas adaptada a turnos, conectada con recetas, raciones, despensa y lista de compra. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#nutrishift) |
-| **03 · Corte** | Edición de vídeo multipista en Android: timeline, audio, color, LUT, textos y exportación. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#corte) |
-| **04 · ALEXIA** | Una biblioteca creativa por proyectos que integra imágenes, vídeo y audio con el almacenamiento y los selectores de Android. | [Ver proyecto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#alexia) |
+| **01 · NEXUS** | Reúne modelos de IA, parámetros, referencias y resultados en un estudio para Android y escritorio. | [Ficha](PROJECTS.md#nexus) |
+| **02 · NutriShift** | Conecta los turnos con las comidas, las raciones, la despensa y la compra. | [Ficha](PROJECTS.md#nutrishift) |
+| **03 · Corte** | Lleva la edición de vídeo multipista, el audio y la exportación a una aplicación Android local. | [Ficha](PROJECTS.md#corte) |
+| **04 · ALEXIA** | Organiza material creativo por proyectos y lo conecta con los archivos y selectores de Android. | [Ficha](PROJECTS.md#alexia) |
 
-La selección combina diseño de producto, utilidad, profundidad técnica y evidencia disponible. Es provisional mientras se completa la revisión del catálogo. Las fichas explican qué está comprobado y qué sigue en desarrollo.
+Las fichas explican el alcance implementado y el estado de cada producto. [Evidencia y límites](VALIDATION.md).
 
-**El ecosistema completo:** [ver todas las apps, variantes y fuentes pendientes](CATALOG.md), incluidas AXELTask y AXELDROBE.
+## Más proyectos
 
-## También en desarrollo
+**AXEL Task** · agenda y tareas. **AXEL Drobe** · armario y conjuntos. **ClipTree** · fragmentos de texto y portapapeles. **AXEL TV** · interacción entre televisión y móvil.
 
-**AXELTask** organiza agenda y tareas. **AXELDROBE** conecta armario, conjuntos y planificación. **AXEL TV** explora la experiencia entre televisión y móvil; **AXEL Music**, la reproducción y organización de audio local. [Ver alcance y estado](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md#otros-proyectos).
+[Explorar el catálogo](CATALOG.md) · [Ver las fichas de producto](PROJECTS.md)
 
 ## Cómo trabajo
 
-- Partir del problema y reducir los pasos para resolverlo.
+- Convertir un problema cotidiano en un flujo claro y manejable.
+- Cuidar los archivos, los permisos y la continuidad de los datos.
 - Usar IA durante el desarrollo, revisar el código y contrastar los resultados con pruebas.
-- Cuidar archivos, permisos y continuidad de los datos.
-- Mantener fuentes versionadas y distinguir prototipos, pruebas y entregas.
+- Mantener fuentes versionadas y documentar qué está implementado y qué está probado.
 
-Kotlin · Jetpack Compose · Material 3 · Room / SQLite · WorkManager · Media3 · Python · PowerShell · Git
-
----
-
-[Explorar las fichas de producto](https://github.com/vidaltb94-collab/vidaltb94-collab/blob/main/PROJECTS.md)
+Kotlin · Jetpack Compose · Material 3 · Room / SQLite · WorkManager · Media3 · Python · TypeScript · Git
